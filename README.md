@@ -1,45 +1,197 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+# 
 
-Welcome USER_NAME,
 
-This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Gitpod and the extensions we use.
+## Portfolio Project 3: _Python Essentials_
+This is an text based game built with Python
 
-## Gitpod Reminders
 
-To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
+## Demo
 
-`python3 -m http.server`
+[View the Live Website Here](https://moirahartigan.github.io/)
+<p align ="center"> 
+<img src="">
+</p>
 
-A blue button should appear to click: *Make Public*,
 
-Another blue button should appear to click: *Open Browser*.
+# Table of Contents
++ [User Experience](#user-experience)
+  + [User Stories](#user-stories)
++ [Features](#features)
+  + [Existing Features](#existing-features)
+  + [Future Features](#future-features)
++ [Technologies Used](#technologies-used)
+  + [Languages Used](#languages-used)
+  + [Frameworks Libraries and Programmes Used](#frameworks-libraries-and-programmes-used)
++ [Testing](#testing)
+  + [Validator Testing](#validator-testing)
+  + [Lighthouse Testing](#lighthouse-testing)  
+  + [Testing User Stories](#testing-user-stories)
+  + [Problems Encountered](#problems-encountered)
++ [Deployment](#deployment)
+  + [Deployment through GitHub Pages](#deployment-through-gitHub-pages)
++ [Credits](#credits)
+  + [Code](#code)
+  + [Acknowledgements](#acknowledgements)
+  
+***
+***
+# User Experience
 
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
+## User Stories
+* 
 
-A blue button should appear to click: *Make Public*,
 
-Another blue button should appear to click: *Open Browser*.
+# Features
 
-In Gitpod you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
+## Current Features
 
-## Updates Since The Instructional Video
+### <em>Game Grid</em>
 
-We continually tweak and adjust this template to help give you the best experience. Here is the version history:
 
-**October 21 2020:** Versions of the HTMLHint, Prettier, Bootstrap4 CDN and Auto Close extensions updated. The Python extension needs to stay the same version for now.
+<br>
 
-**October 08 2020:** Additional large Gitpod files (`core.mongo*` and `core.python*`) are now hidden in the Explorer, and have been added to the `.gitignore` by default.
+<p align="center">  
+  <img src="">
+ </p>
+ 
+<br>
+<br>
 
-**September 22 2020:** Gitpod occasionally creates large `core.Microsoft` files. These are now hidden in the Explorer. A `.gitignore` file has been created to make sure these files will not be committed, along with other common files.
 
-**April 16 2020:** The template now automatically installs MySQL instead of relying on the Gitpod MySQL image. The message about a Python linter not being installed has been dealt with, and the set-up files are now hidden in the Gitpod file explorer.
 
-**April 13 2020:** Added the _Prettier_ code beautifier extension instead of the code formatter built-in to Gitpod.
+<br>
+<br>
 
-**February 2020:** The initialisation files now _do not_ auto-delete. They will remain in your project. You can safely ignore them. They just make sure that your workspace is configured correctly each time you open it. It will also prevent the Gitpod configuration popup from appearing.
+ <p align="center">  
+  <img src="">
+ </p>
+ 
+ <br>
+ 
 
-**December 2019:** Added Eventyret's Bootstrap 4 extension. Type `!bscdn` in a HTML file to add the Bootstrap boilerplate. Check out the <a href="https://github.com/Eventyret/vscode-bcdn" target="_blank">README.md file at the official repo</a> for more options.
 
---------
 
-Happy coding!
+<br>
+<br>
+
+<p align="center">  
+  <img src="">
+ </p>
+ 
+ <br>
+ <br>
+ 
+ 
+ 
+ <p align="center">  
+  <img src="">
+ </p>
+
+<br>
+<br>
+
+
+
+## Future Features
++ I would like to add sound animation to the game to allow for sound effects to play on click correct flip of card and on completion of game. 
++ I would like to add a mute button to allow the user to control the sound effects.
++ I would like to add a high score leader board to the game to allow the user to add their name and record the moves and time.
+
+***
+***
+
+# Technologies Used
+
+## Languages Used
+1. [Python](https://en.wikipedia.org/wiki/Python_(programming_language)) - To create a basic site.
+
+## Frameworks Libraries and Programmes Used
+* [GitHub](https://github.com/) - used to host repository.
+* [GitPod](https://gitpod.io/workspaces) - used to develop project and organise version control.
+* [GitHub Pages](https://github.com/moirahartigan/Ms1-Schools-Out-Childcare/settings/pages) - used to deploy the site.
+
+***
+***
+# Testing
+## Validator Testing
+At the completion or heavy editing of sections, I used the following to check my code for syntax errors:
+
+
+### <em>HTML Validator</em>
+
+  <p align="center">  
+ <img src="https://github.com/moirahartigan/Portfolio-2---Alien-Memory-Game/blob/master/assets/readme/html-validator.png"> 
+ </p>
+  
+### <em>CSS Validator</em>
+
+  <p align="center">  
+  <img src="https://github.com/moirahartigan/Portfolio-2---Alien-Memory-Game/blob/master/assets/readme/css-validator.png">
+ </p>
+ 
+ The JavaScript code was run through Beautify Tools to not only beaufify the code but also to check for any syntax errors.
+    
+* All pages came back with no errors.
+ 
+
+## Testing User Stories
+* 
+All user stories have been fullfilled from the original targets. The game functions are all working with no issues found.
+
+
+## Problems Encountered
+* 
+
+***
+***
+# Deployment
+## Creating the App
+This application will be deployed via [Heroku](https://dashboard.heroku.com/apps/love-moiras-sandwiches/deploy/github)
+
+* Ensure all code is correct and ready for deployment.
+* Enter the following code to import the required dependencies to the requirements.txt file:
+    * pip3 freeze > requirements.txt
+
+* Heroku will use this file to import the dependencies that are required.
+* Log into Heroku or sign up for a free account.
+* If signing up, you will need to wait and accept an authentication email.
+* Navigate to Dashboard.
+* Click "New" and select "create new app" from the drop-down menu. This is found in the top right cornor of the window.
+* Provide a unique name for your application and select your region.
+* Click "Create App".
+
+## Setting up the Heroku App 
+* Navigate to "Settings" and scroll down to "build packs".
+* Click "build packs" and then click both "python" and "node.js"(node.js is needed for the mock terminal.)
+* Take note of the order and ensure that the python buildpack is above the node.js buildpack, You can click and drag the packs to re-arrange them.
+
+This site was deployed through GitHub Pages using the following steps:
+## Deployment through GitHub Pages
+* Navigate to the "Deploy" section.
+* Scroll down to "Deployment Method" and select "GitHub".
+* Authorize the connection of Heroku to GitHub.
+* Search for your GitHub repository name, and select the correct repository.
+* For Deployment there are two options, Automatic Deployments or Manual.
+* Automatic Deployment: This will prompt Heroku to re-build your app each time you push your code to GitHub.
+* Manual Deployment: This will only prompt Heroku to build your app when you manually tell it to do so.
+* Ensure the correct branch is selected "master/Main", and select a deployment method. For this project I chose Automatic Deployment.
+
+***
+***
+# Credits
+## Code
+* [free Code Camp](https://marina-ferreira.github.io/tutorials/js/memory-game/) this tutorial was followed and some JavaScript code was taken and adapted to my game.
+* [scotch](https://scotch.io/tutorials/how-to-build-a-memory-matching-game-in-javascript) inspiration was also taken from this tutorial for the timer function.
+* [youtube](https://www.youtube.com/watch?v=28VfzEiJgy4) inspiration was taken from this tutorial.
+* [w3schools](https://www.w3schools.com/) was used as a general source of knowledge 
+* [MND Web Docs](https://developer.mozilla.org/en-US/docs/Web/CSS/flex-direction) was used as a general source of knowledge.
+* [Stack Overflow](https://stackoverflow.com/) was used to assist during debugging.
+* [github docs](https://docs.github.com/en/pages/getting-started-with-github-pages/creating-a-custom-404-page-for-your-github-pages-site) was used to create the 404 page.
+
+  
+## Acknowledgements
+* I would like to thank the Slack Community for their endless support.
+* I would like to thank Kasia Bogucka our class cohort facilitator for her constant assistance and encouragement.
+* I would like to thank my children for testing the game and my husband for his support and allowing me some child free time to work on this project.
+* Finally, I would like to thank my mentor Oluwafemi Medale for his guidence and feedback throughout this portfolio project.
+ 
