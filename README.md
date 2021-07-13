@@ -2,7 +2,7 @@
 
 
 ## Portfolio Project 3: _Python Essentials_
-This is an text based game built with Python
+A text based game built with Python
 
 
 ## Demo
@@ -14,20 +14,17 @@ This is an text based game built with Python
 
 
 # Table of Contents
-+ [User Experience](#user-experience)
-  + [User Stories](#user-stories)
++ [Design](#design)
+  + [Goals](#goals)
 + [Features](#features)
   + [Existing Features](#existing-features)
   + [Future Features](#future-features)
 + [Technologies Used](#technologies-used)
-  + [Languages Used](#languages-used)
-  + [Frameworks Libraries and Programmes Used](#frameworks-libraries-and-programmes-used)
 + [Testing](#testing)
-  + [Validator Testing](#validator-testing)
-  + [Lighthouse Testing](#lighthouse-testing)  
-  + [Testing User Stories](#testing-user-stories)
-  + [Problems Encountered](#problems-encountered)
+  + [Bugs & Fixes](#bugs-&-fixes)
 + [Deployment](#deployment)
+  + [Creating the App](#creating-the-app)
+  + [Setting up the Heroku App](#setting-up-the-heroku-app)
   + [Deployment through GitHub Pages](#deployment-through-gitHub-pages)
 + [Credits](#credits)
   + [Code](#code)
@@ -35,11 +32,15 @@ This is an text based game built with Python
   
 ***
 ***
-# User Experience
+# Design
+This is a text-based game that the user will operate in the command line. The aim of the game is to .................. This game is completely written in Python.
 
-## User Stories
-* 
 
+  [Logic Flow Chart](https://github.com/)
+### Goals
+  The main goal of this project is
+### Audience
+  This game is aimed for all to paly.
 
 # Features
 
@@ -93,9 +94,8 @@ This is an text based game built with Python
 
 
 ## Future Features
-+ I would like to add sound animation to the game to allow for sound effects to play on click correct flip of card and on completion of game. 
++ I would like to add sound animation to the game to allow for sound effects to play when the user wins or looses the game and for background music during the game. 
 + I would like to add a mute button to allow the user to control the sound effects.
-+ I would like to add a high score leader board to the game to allow the user to add their name and record the moves and time.
 
 ***
 ***
@@ -109,7 +109,7 @@ This is an text based game built with Python
 * [GitHub](https://github.com/) - used to host repository.
 * [GitPod](https://gitpod.io/workspaces) - used to develop project and organise version control.
 * [GitHub Pages](https://github.com/moirahartigan/Ms1-Schools-Out-Childcare/settings/pages) - used to deploy the site.
-
+* [Heroku](https://www.heroku.com/home)
 ***
 ***
 # Testing
@@ -117,36 +117,26 @@ This is an text based game built with Python
 At the completion or heavy editing of sections, I used the following to check my code for syntax errors:
 
 
-### <em>HTML Validator</em>
+### <em>PEP8 Linter</em>
 
   <p align="center">  
- <img src="https://github.com/moirahartigan/Portfolio-2---Alien-Memory-Game/blob/master/assets/readme/html-validator.png"> 
+ <img src=""> 
  </p>
   
-### <em>CSS Validator</em>
-
-  <p align="center">  
-  <img src="https://github.com/moirahartigan/Portfolio-2---Alien-Memory-Game/blob/master/assets/readme/css-validator.png">
- </p>
  
- The JavaScript code was run through Beautify Tools to not only beaufify the code but also to check for any syntax errors.
+ 
     
-* All pages came back with no errors.
+* No errors found.
  
 
-## Testing User Stories
-* 
-All user stories have been fullfilled from the original targets. The game functions are all working with no issues found.
-
-
-## Problems Encountered
+## Bugs & Fixes
 * 
 
 ***
 ***
 # Deployment
 ## Creating the App
-This application will be deployed via [Heroku](https://dashboard.heroku.com/apps/love-moiras-sandwiches/deploy/github)
+This application will be deployed via [Heroku]()
 
 * Ensure all code is correct and ready for deployment.
 * Enter the following code to import the required dependencies to the requirements.txt file:
@@ -180,18 +170,14 @@ This site was deployed through GitHub Pages using the following steps:
 ***
 # Credits
 ## Code
-* [free Code Camp](https://marina-ferreira.github.io/tutorials/js/memory-game/) this tutorial was followed and some JavaScript code was taken and adapted to my game.
-* [scotch](https://scotch.io/tutorials/how-to-build-a-memory-matching-game-in-javascript) inspiration was also taken from this tutorial for the timer function.
-* [youtube](https://www.youtube.com/watch?v=28VfzEiJgy4) inspiration was taken from this tutorial.
+* [youtube]() inspiration was taken from this tutorial.
 * [w3schools](https://www.w3schools.com/) was used as a general source of knowledge 
-* [MND Web Docs](https://developer.mozilla.org/en-US/docs/Web/CSS/flex-direction) was used as a general source of knowledge.
+* [MND Web Docs](https://developer.mozilla.org) was used as a general source of knowledge.
 * [Stack Overflow](https://stackoverflow.com/) was used to assist during debugging.
-* [github docs](https://docs.github.com/en/pages/getting-started-with-github-pages/creating-a-custom-404-page-for-your-github-pages-site) was used to create the 404 page.
 
   
 ## Acknowledgements
 * I would like to thank the Slack Community for their endless support.
 * I would like to thank Kasia Bogucka our class cohort facilitator for her constant assistance and encouragement.
-* I would like to thank my children for testing the game and my husband for his support and allowing me some child free time to work on this project.
 * Finally, I would like to thank my mentor Oluwafemi Medale for his guidence and feedback throughout this portfolio project.
  
