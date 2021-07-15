@@ -2,8 +2,12 @@
 # Story taken and adapted from a book of the same name By Julia Donaldson
 # By Moira Hartigan
 
+
+# Imports
+import random
+
 def hello():
-    name = str(input("Hello! Tell me your name: "))
+    name = str(input("Hello! Tell me your name: \n"))
     print("Hi " + str(name) + ". Welcome to The Scarecrows Wedding")
     return
 hello()
