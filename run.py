@@ -3,13 +3,52 @@
 # By Moira Hartigan
 
 
-# Imports
-import random
+# Import time for speed of text on story.
+import time
+
 
 def hello():
     name = str(input("Hello! Tell me your name: \n"))
     print("Hi " + str(name) + ". Welcome to The Scarecrows Wedding")
-    return
-hello()
+    return 
+hello()   
+   #answer = input("Would you like to play The Sacrecrows Wedding? \n")
+ 
 
 
+
+def intro():
+    """ 
+    The Story begins and the player is given their first option
+    """
+    print("Betty O’Barley and Harry O’Hay are scarecrows.")
+    print("Harry loved Betty and Betty loved Harry,")
+    print('So Harry said, “Betty, my beauty, lets marry!')
+    print("Lets have a wedding, the best wedding yet,")
+    print('A wedding no one will ever forget.”')
+    print("")
+    print("Betty agreed, so they hugged")
+    print("and they kissed.")
+    print('Then Betty said, “Harry, dear,')
+    print('Lets make a list.”')
+    print("")
+    print('Harry gave Betty his arm')
+    print("And set off on a hunt round the farm.")
+    print("")
+    answer = input("Can you help Harry find some Pink flowers for the list and get back for his wedding? (y/n) \n")
+   
+
+    print("Too bad …  It would have been a good wedding ! \n")
+    
+    print("")
+    
+    #if yes
+    print("")
+    print("Pink Flowers were the only thing left on the list \n")
+    print('Harry said “Betty, dear, I can find those. \n')
+    print('Why don’t I pick some while you have a doze?” \n')
+    print()
+
+
+
+intro()
