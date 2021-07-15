@@ -9,13 +9,12 @@ import time
 
 def hello():
     name = str(input("Hello! Tell me your name: \n"))
+    print("")
     print("Hi " + str(name) + ". Welcome to The Scarecrows Wedding")
+    print("")
     return 
 hello()   
-   #answer = input("Would you like to play The Sacrecrows Wedding? \n")
- 
-
-
+   
 
 def intro():
     """ 
@@ -35,20 +34,31 @@ def intro():
     print('Harry gave Betty his arm')
     print("And set off on a hunt round the farm.")
     print("")
-    answer = input("Can you help Harry find some Pink flowers for the list and get back for his wedding? (y/n) \n")
+    
    
+def chooseOption():
+    decision = ""
+    while decision != "yes" and decision != "no" : # input validation
+        decision = input("Can you help Harry find some Pink flowers for the list and get back for his wedding? (yes/no) : \n")
 
-    print("Too bad …  It would have been a good wedding ! \n")
-    
-    print("")
-    
-    #if yes
-    print("")
-    print("Pink Flowers were the only thing left on the list \n")
-    print('Harry said “Betty, dear, I can find those. \n')
-    print('Why don’t I pick some while you have a doze?” \n')
-    print()
-
-
+    return decision
 
 intro()
+chooseOption()
+    
+
+
+    #print("Too bad …  It would have been a good wedding ! ")
+    
+    #print("")
+    
+    #if yes
+    #print("")
+    #print("Pink Flowers were the only thing left on the list")
+    #print('Harry said “Betty, dear, I can find those.')
+   # print('Why don’t I pick some while you have a doze?” ')
+    #print()
+
+
+
+#intro()
