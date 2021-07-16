@@ -50,9 +50,9 @@ def typewriter(intro):
         sys.stdout.flush() # display it
 
         if char != "\n":
-            time.sleep(0.1) # wait until until the next character
+            time.sleep(0.02) # wait until until the next character
         else:
-            time.sleep(1) # 1 sec delay for the end of each sentance
+            time.sleep(0.5) # 1 sec delay for the end of each sentance
 
 typewriter(intro)        
 
@@ -65,11 +65,11 @@ def start_game():
 welcome_msg()
 
 name = str(input("Thank you for joining us. \n\
-    What is your name: \n"))
+    What is your name: \n" 0.02))
 print("")
 typewriter("Welcome to The Scarecrows Wedding " + str(name) + ".")
 print("")
-startGame = input("Would you like to start the game? (yes/no): \n")
+startGame = input("Would you like to start the game? (yes/no): \n" 0.02)
 if startGame == 'no' or startGame == 'No':
     typewriter("Maybe next time")
 elif startGame == 'yes' or startGame == 'Yes':
@@ -87,6 +87,9 @@ elif startGame == 'yes' or startGame == 'Yes':
     typewriter('Harry gave Betty his arm \n')
     typewriter("And set off on a hunt round the farm. \n")
     print("")
+    print("")
+    typewriter("Can you help Harry find some Pink flowers for the list \n\
+    and get back for his wedding? (yes/no) : \n")
 
 
  
