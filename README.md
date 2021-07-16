@@ -170,7 +170,7 @@ This site was deployed through GitHub Pages using the following steps:
 ***
 # Credits
 ## Code
-* [youtube]() inspiration was taken from this tutorial.
+* [youtube](https://www.youtube.com/watch?v=2h8e0tXHfk0) typewriter style animation code adpted from this tutorial.
 * [w3schools](https://www.w3schools.com/) was used as a general source of knowledge 
 * [MND Web Docs](https://developer.mozilla.org) was used as a general source of knowledge.
 * [Stack Overflow](https://stackoverflow.com/) was used to assist during debugging.

@@ -11,8 +11,8 @@ intro = "Hello! \n\
 Welcome to Diddly Squat Farm. \n\
 There is a big event happening today. \n "
 
-
-def typewriter(intro):
+# typewriter style animation code adpted from https://www.youtube.com/watch?v=2h8e0tXHfk0
+def typewriter(intro): 
     """
     Text will be displayed letter by letter using sys import rater than a
     whole block of text - A time delay added will apply at the end of each 
