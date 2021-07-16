@@ -17,9 +17,12 @@ def typewriter(intro):
     for char in intro:
         sys.stdout.write(char) #print each character - print it
         sys.stdout.flush() # display it
-        time.sleep(0.1) # wait until until the next character
 
-
+        if char != "\n":
+            time.sleep(0.1) # wait until until the next character
+        else:
+            time.sleep(1)
+        
 
 typewriter(intro)
 #function to start game
