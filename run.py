@@ -52,23 +52,18 @@ def typewriter(intro):
         sys.stdout.flush() # display it
 
         if char != "\n":
-            time.sleep(0.02) # wait until until the next character
+            time.sleep(0.03) # wait until until the next character
         else:
             time.sleep(0.5) # 0.5 sec delay for the end of each sentance
 
-typewriter(intro)        
-
-
+typewriter(intro)    
 welcome_msg()
 
 
-name = str(input("What is your name: \n")) 
-print()
-typewriter(f"Welcome to The Scarecrows Wedding {name}, Thank you for joining us. \n")
-
-
-
 def intro():
+    name = str(input("What is your name: \n")) 
+    print()
+    typewriter(f"Welcome to The Scarecrows Wedding {name}, Thank you for joining us. \n")
 
     first_response = input("Would you like to start the game? \n (yes/no): \n")
     if first_response == 'yes' or first_response == 'Yes':
@@ -93,18 +88,21 @@ def intro():
     elif first_response == 'no' or first_response == 'No':
         print("Maybe next time. Goodbye")
 
-intro()     
+intro()  
 
-def start_game():
+def level_one():
     second_response = input("Can you help Harry find some Pink flowers for the list \n"
                             "and get back for his wedding?\n(yes/no) : \n")
-    second_response = ""
     if second_response == 'yes' or second_response == 'Yes':
-        print("part_2")
+        print("")
+        typewriter("Pink Flowers were the only thing left on the list \n")
+        typewriter('Harry said “Betty, dear, I can find those. \n')
+        typewriter('Why don’t I pick some while you have a doze?” \n')
+
         
     elif second_response == 'no' or second_response == 'No':
-        typewriter("Too bad, it would have been the best wedding yet . Goodbye, " + name + ".")
-        game_over()
+        typewriter("Too bad, it would have been the best wedding yet . Goodbye,")
+        
 
     else:
          typewriter(" I dont understand that. Please type yes or no.")
@@ -112,6 +110,28 @@ def start_game():
          second_response = input(" \n Can you help Harry find some Pink flowers for the list \n"
         "and get back for his wedding?\n(yes/no) : \n")
 
+       
+
+level_one() 
+
+def level_two():
+    print()
+level_two()
+
+
+def level_three():
+     print()   
+level_three()
+
+
+def level_four():
+    print()
+level_four
+
+
+def level_five():
+    print()
+level_five
 
 
 def game_over():
@@ -126,7 +146,6 @@ def game_over():
     print("##############################")
     print("")
 
-game_over()
+    game_over()
 
 
-start_game()
