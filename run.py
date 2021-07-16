@@ -3,9 +3,37 @@
 # By Moira Hartigan
 
 
-# Import time for speed of text on story and sys to print individual characters.
+# Import time and sys to print typewriter effect.
 import sys
 import time
+
+def welcome_msg():
+    """
+    Function to print welcome graphics
+    """
+    print()
+    print("######################################################################################################")
+    print("#                                                                                                    #")
+    print("#                                     The Scarecrows Wedding                                         #")
+    print("#                                      At Diddly Squat Farm                                          #")
+    print("#                                                                                                    #")
+    print("#                          ___________                                                               #")
+    print("#                         |           |                                                              #")
+    print("#                         |           |                                                              #")
+    print("#                _________|___________|_________                  | *\_/* |___________               #")
+    print("#                    |   _______________   |                    | |__/-\__|________   |              #")                                
+    print("#                    |  |               |  |                    |  |               |  |              #")
+    print("#                    |  |    0    0     |  |                    |  |    0    0     |  |              #")
+    print("#                    |  |       -       |  |                    |  |       -       |  |              #")
+    print("#                    |  |     \___/     |  |                    |  |     \___/     |  |              #")
+    print("#                    |  |               |  |                    |  |               |  |              #")
+    print("#                    |  |_____|\__/|____|  |                    |  |_______________|  |              #")
+    print("#                    |________|/  \|_______|                    |________******_______|              #")
+    print("#               _\_______|_____________|____________/_      _\_______|_____________|____________/_   #")
+    print("#                /                                  \        /                                  \    #")
+    print("######################################################################################################")
+    print("")
+
 
 intro = "Hello! \n\
 Welcome to Diddly Squat Farm. \n\
@@ -27,65 +55,42 @@ def typewriter(intro):
             time.sleep(0.1) # wait until until the next character
         else:
             time.sleep(1) # 1 sec delay for the end of each sentance
-        
 
-typewriter(intro)
+typewriter(intro)        
+
 #function to start game
-
-
-def intro():
+def start_game():
     """ 
     The Story begins and the player is given their first option
     """
-    print(" Welcome to Diddly Spuat Farm," + name)
-    print("Betty O’Barley and Harry O’Hay are scarecrows.")
-    print("Harry loved Betty and Betty loved Harry,")
-    print('So Harry said, “Betty, my beauty, lets marry!')
-    print("Lets have a wedding, the best wedding yet,")
-    print('A wedding no one will ever forget.”')
+   # print welcome message
+welcome_msg()
+
+name = str(input("Thank you for joining us. \n\
+    What is your name: \n"))
+print("")
+typewriter("Welcome to The Scarecrows Wedding " + str(name) + ".")
+print("")
+startGame = input("Would you like to start the game? (yes/no): \n")
+if startGame == 'no' or startGame == 'No':
+    typewriter("Maybe next time")
+elif startGame == 'yes' or startGame == 'Yes':
     print("")
-    print("Betty agreed, so they hugged")
-    print("and they kissed.")
-    print('Then Betty said, “Harry, dear,')
-    print('Lets make a list.”')
+    typewriter("Harry loved Betty and Betty loved Harry, \n")
+    typewriter('So Harry said, “Betty, my beauty, lets marry!\n')
+    typewriter("Lets have a wedding, the best wedding yet,\n")
+    typewriter('A wedding no one will ever forget.”\n')
     print("")
-    print('Harry gave Betty his arm')
-    print("And set off on a hunt round the farm.")
+    typewriter("Betty agreed, so they hugged \n")
+    typewriter("and they kissed. \n")
+    typewriter('Then Betty said, “Harry, dear, \n')
+    typewriter('Lets make a list.” \n')
     print("")
-    
-   
-def chooseOption():
-    decision = ""
-    while decision != "yes" and decision != "no" : # input validation
-        decision = input("Can you help Harry find some Pink flowers for the list and get back for his wedding? (yes/no) : \n")
-
-    return decision
+    typewriter('Harry gave Betty his arm \n')
+    typewriter("And set off on a hunt round the farm. \n")
+    print("")
 
 
-def checkDecision(chooseOption):
-    print("Pink Flowers were the only thing left on the list")
-    print('Harry said “Betty, dear, I can find those.')
-    print('Why don’t I pick some while you have a doze?” ')
+ 
 
-
-
-
-#intro()
-chooseOption()
-    
-
-
-    #print("Too bad …  It would have been a good wedding ! ")
-    
-    #print("")
-    
-    #if yes
-    #print("")
-    #print("Pink Flowers were the only thing left on the list")
-    #print('Harry said “Betty, dear, I can find those.')
-   # print('Why don’t I pick some while you have a doze?” ')
-    #print()
-
-
-
-#intro()
+    start_game()
