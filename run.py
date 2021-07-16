@@ -3,23 +3,33 @@
 # By Moira Hartigan
 
 
-# Import time for speed of text on story.
+# Import time for speed of text on story and sys to print individual characters.
+import sys
 import time
 
+intro = "Hello! \n\
+Welcome to Diddly Squat Farm. \n\
+There is a big event happening today. \n "
 
-def hello():
-    name = str(input("Hello! Tell me your name: \n"))
-    print("")
-    print("Hi " + str(name) + ". Welcome to The Scarecrows Wedding")
-    print("")
-    return 
-hello()   
-   
+
+def typewriter(intro):
+
+    for char in intro:
+        sys.stdout.write(char) #print each character - print it
+        sys.stdout.flush() # display it
+        time.sleep(0.1) # wait until until the next character
+
+
+
+typewriter(intro)
+#function to start game
+
 
 def intro():
     """ 
     The Story begins and the player is given their first option
     """
+    print(" Welcome to Diddly Spuat Farm," + name)
     print("Betty O’Barley and Harry O’Hay are scarecrows.")
     print("Harry loved Betty and Betty loved Harry,")
     print('So Harry said, “Betty, my beauty, lets marry!')
@@ -43,7 +53,16 @@ def chooseOption():
 
     return decision
 
-intro()
+
+def checkDecision(chooseOption):
+    print("Pink Flowers were the only thing left on the list")
+    print('Harry said “Betty, dear, I can find those.')
+    print('Why don’t I pick some while you have a doze?” ')
+
+
+
+
+#intro()
 chooseOption()
     
 
