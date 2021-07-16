@@ -98,10 +98,13 @@ def level_one():
         typewriter("Pink Flowers were the only thing left on the list \n")
         typewriter('Harry said “Betty, dear, I can find those. \n')
         typewriter('Why don’t I pick some while you have a doze?” \n')
-
+        print("")
+        typewriter("..... I can find you a field of pink flowerzzzzz! \n")
+        typewriter("Follow me! ..... \n")
+        typewriter("Buzzed a big stripy bee. \n")
         
     elif second_response == 'no' or second_response == 'No':
-        typewriter("Too bad, it would have been the best wedding yet . Goodbye,")
+        typewriter("Too bad, it would have been the best wedding yet. Goodbye.")
         
 
     else:
@@ -115,7 +118,13 @@ def level_one():
 level_one() 
 
 def level_two():
-    print()
+    print("")
+    typewriter("What should Harry do? \n ")
+    typewriter("1.) Follow the bee \n")
+    typewriter("2.) Go to the farm shop any buy some flowers \n")
+    typewriter("3.) Take a snooze ... its been a long day \n")
+    typewriter("Choose (1/2/3): \n )
+    print("")
 level_two()
 
 
