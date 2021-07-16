@@ -13,6 +13,11 @@ There is a big event happening today. \n "
 
 
 def typewriter(intro):
+    """
+    Text will be displayed letter by letter using sys import rater than a
+    whole block of text - A time delay added will apply at the end of each 
+    sentance for 1 second unless "\n" is used.
+    """
 
     for char in intro:
         sys.stdout.write(char) #print each character - print it
@@ -21,7 +26,7 @@ def typewriter(intro):
         if char != "\n":
             time.sleep(0.1) # wait until until the next character
         else:
-            time.sleep(1)
+            time.sleep(1) # 1 sec delay for the end of each sentance
         
 
 typewriter(intro)
