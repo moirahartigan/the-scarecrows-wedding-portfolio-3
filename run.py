@@ -7,6 +7,8 @@
 import sys
 import time
 
+
+
 def welcome_msg():
     """
     Function to print welcome graphics
@@ -52,46 +54,79 @@ def typewriter(intro):
         if char != "\n":
             time.sleep(0.02) # wait until until the next character
         else:
-            time.sleep(0.5) # 1 sec delay for the end of each sentance
+            time.sleep(0.5) # 0.5 sec delay for the end of each sentance
 
 typewriter(intro)        
 
-#function to start game
-def start_game():
-    """ 
-    The Story begins and the player is given their first option
-    """
-   # print welcome message
+
 welcome_msg()
 
-name = str(input("Thank you for joining us. \n\
-    What is your name: \n" 0.02))
-print("")
-typewriter("Welcome to The Scarecrows Wedding " + str(name) + ".")
-print("")
-startGame = input("Would you like to start the game? (yes/no): \n" 0.02)
-if startGame == 'no' or startGame == 'No':
-    typewriter("Maybe next time")
-elif startGame == 'yes' or startGame == 'Yes':
-    print("")
-    typewriter("Harry loved Betty and Betty loved Harry, \n")
-    typewriter('So Harry said, “Betty, my beauty, lets marry!\n')
-    typewriter("Lets have a wedding, the best wedding yet,\n")
-    typewriter('A wedding no one will ever forget.”\n')
-    print("")
-    typewriter("Betty agreed, so they hugged \n")
-    typewriter("and they kissed. \n")
-    typewriter('Then Betty said, “Harry, dear, \n')
-    typewriter('Lets make a list.” \n')
-    print("")
-    typewriter('Harry gave Betty his arm \n')
-    typewriter("And set off on a hunt round the farm. \n")
-    print("")
-    print("")
-    typewriter("Can you help Harry find some Pink flowers for the list \n\
-    and get back for his wedding? (yes/no) : \n")
+
+name = str(input("What is your name: \n")) 
+print()
+typewriter(f"Welcome to The Scarecrows Wedding {name}, Thank you for joining us. \n")
 
 
- 
 
-    start_game()
+def intro():
+
+    first_response = input("Would you like to start the game? \n (yes/no): \n")
+    if first_response == 'yes' or first_response == 'Yes':
+        print("")
+        typewriter("Ok Great ! \n")
+        typewriter("Here is the story so far ...... \n")
+        typewriter("Harry loved Betty and Betty loved Harry, \n")
+        typewriter('So Harry said, “Betty, my beauty, lets marry!\n')
+        typewriter("Lets have a wedding, the best wedding yet,\n")
+        typewriter('A wedding no one will ever forget.”\n')
+        print("")
+        typewriter("Betty agreed, so they hugged \n")
+        typewriter("and they kissed. \n")
+        typewriter('Then Betty said, “Harry, dear, \n')
+        typewriter('Lets make a list.” \n')
+        print("")
+        typewriter('Harry gave Betty his arm \n')
+        typewriter("And set off on a hunt round the farm. \n")
+        print("")
+        print("")
+
+    elif first_response == 'no' or first_response == 'No':
+        print("Maybe next time. Goodbye")
+
+intro()     
+
+def start_game():
+    second_response = input("Can you help Harry find some Pink flowers for the list \n"
+                            "and get back for his wedding?\n(yes/no) : \n")
+    second_response = ""
+    if second_response == 'yes' or second_response == 'Yes':
+        print("part_2")
+        
+    elif second_response == 'no' or second_response == 'No':
+        typewriter("Too bad, it would have been the best wedding yet . Goodbye, " + name + ".")
+        game_over()
+
+    else:
+         typewriter(" I dont understand that. Please type yes or no.")
+         print("")
+         second_response = input(" \n Can you help Harry find some Pink flowers for the list \n"
+        "and get back for his wedding?\n(yes/no) : \n")
+
+
+
+def game_over():
+    """
+    Function for when the user chooses the wrong option/ answer Prints game over and the reason why
+    """
+    print("")
+    print("##############################")
+    print("#                            #")
+    print("#        |GAME OVER|         #")
+    print("#                            #")
+    print("##############################")
+    print("")
+
+game_over()
+
+
+start_game()
