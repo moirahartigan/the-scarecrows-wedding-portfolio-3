@@ -14,22 +14,22 @@ def welcome_msg():
     Function to print welcome graphics
     """
     print()
-    typewriter("########################################################################\n")
-    print("#           _________            Welcome to                                 #\n")
-    print("#          |         |      The Scarecrows Wedding                          #\n")
-    print("#          |         |        At Diddly Squat                               #\n")
-    print("#  ________|_________|_________     Farm      | *\_/* |________             #\n")
-    print("#      |   ____________   |                 | |__/-\__|_____   |            #\n")                                
-    print("#      |  |            |  |                 |  |            |  |            #\n")
-    print("#      |  |   0    0   |  |                 |  |   0    0   |  |            #\n")
-    print("#      |  |     -      |  |                 |  |      -     |  |            #\n")
-    print("#      |  |   \____/   |  |                 |  |    \___/   |  |            #\n")
-    print("#      |  |            |  |                 |  |            |  |            #\n")
-    print("#      |  |____|\_/|___|  |                 |  |____________|  |            #\n")
-    print("#      |_______|/ \|______|                 |_______*****______|            #\n")
-    print("# _\_______|____________|________/_   _\_______|__________|__________/_     #\n")
-    print("#  /                             \     /                             \      #\n")
-    typewriter("######################################################################\n\n")
+    print("#############################################################################")
+    print("#           _________            Welcome to                                 #")
+    print("#          |         |      The Scarecrows Wedding                          #")
+    print("#          |         |        At Diddly Squat                               #")
+    print("#  ________|_________|_________     Farm      | *\_/* |________             #")
+    print("#      |   ____________   |                 | |__/-\__|_____   |            #")                                
+    print("#      |  |            |  |                 |  |            |  |            #")
+    print("#      |  |   0    0   |  |                 |  |   0    0   |  |            #")
+    print("#      |  |     -      |  |                 |  |      -     |  |            #")
+    print("#      |  |   \____/   |  |                 |  |    \___/   |  |            #")
+    print("#      |  |            |  |                 |  |            |  |            #")
+    print("#      |  |____|\_/|___|  |                 |  |____________|  |            #")
+    print("#      |_______|/ \|______|                 |_______*****______|            #")
+    print("# _\_______|____________|________/_   _\_______|__________|__________/_     #")
+    print("#  /                             \     /                             \      #")
+    print("#########################################################################\n\n")
     print("")
 
 intro = "Hello!"
@@ -49,7 +49,7 @@ def typewriter(intro):
         sys.stdout.write(character) #print each character - print it
         sys.stdout.flush() # display it
 
-        if character == "#\n":
+        if character == "\n":
             time.sleep(0.005) # wait until until the next character
         else:
             time.sleep(0.03) # 0.5 sec delay for the end of each sentance
@@ -77,7 +77,9 @@ def intro():
     
     startGame = input("Would you like to start the game? \n (yes/no): \n")
     if startGame == 'no' or startGame == 'No':
-        game_over("Maybe next time. Goodbye")
+        typewriter("Maybe next time. Goodbye")
+        print()
+        game_over()
         
     elif startGame == 'yes' or startGame == 'Yes':
         print()
@@ -91,25 +93,26 @@ def chapter_one():
     typewriter('So Harry said, “Betty, my beauty, lets marry!\n')
     typewriter("Lets have a wedding, the best wedding yet,\n")
     typewriter('A wedding no one will ever forget.”\n')
-    print("")
+    print()
     typewriter("Betty agreed, so they hugged \n")
     typewriter("and they kissed. \n")
     typewriter('Then Betty said, “Harry, dear, \n')
     typewriter('Lets make a list.” \n')
-    print("")
+    print()
     typewriter('Harry gave Betty his arm \n')
     typewriter("And set off on a hunt round the farm. \n")
-    print("")
-    print("")
+    print()
+    print()
     first_response = input("Can you help Harry find some Pink flowers for the list \n"
                             "and get back for his wedding?\n(yes/no) : \n")
     if first_response == 'yes' or first_response == 'Yes':
-        print("")
+        print()
         chapter_two()
 
     elif first_response == 'no' or first_response == 'No':
-        typewriter(
-            "Too bad, it would have been the best wedding yet. Goodbye.")
+        typewriter("Too bad, it would have been the best wedding yet. Goodbye.")
+        print()
+        game_over()
         
        
 
@@ -119,16 +122,16 @@ def chapter_two():
     typewriter("Pink Flowers were the only thing left on the list \n")
     typewriter('Harry said “Betty, dear, I can find those. \n')
     typewriter('Why don’t I pick some while you have a doze?” \n')
-    print("")
+    print()
     typewriter("I can find you a field of pink flowerzzzzz! \n")
     typewriter("Follow me! ..... \n")
     typewriter("Buzzed a big stripy bee. \n")
-    print("")
+    print()
     typewriter("What should Harry do? \n ")
     typewriter("1.) Follow the bee \n")
     typewriter(" 2.) Go to the farm shop to buy some flowers instead \n")
     typewriter(" 3.) Call the florist and have them deliver the flowers \n")
-    print("")
+    print()
     second_response = input("Choose option (1, 2 or 3): \n ")
     if second_response == '1':
         print()
@@ -138,12 +141,15 @@ def chapter_two():
         print()
         typewriter(" oh no the Farm Shop is sold out\n")
         typewriter(" Betty is not pleased\n")
-        typewriter(" The Wedding is off ! - Game Over")
+        typewriter(" The Wedding is off !")
+        print()
+        game_over()
     elif second_response == '3':
         print()
         typewriter("You are a Scarecrrow !!! \n")
         typewriter("You have no phone to make the call and no money to pay for flowers.\n ")
-        typewriter("Game Over")   
+        print()
+        game_over()  
 
     
         
@@ -170,11 +176,11 @@ def chapter_three():
         chapter_four()
 
     elif third_response == 'no' or third_response == 'No':        
-        typewriter(
-            "Harry returns with the flowers....."
-            "but they have died without water!"
-            "oh dear Betty is not pleased and the wedding is off"
-            "Game Over")
+        typewriter("Harry returns with the flowers..... \n")
+        typewriter("but they have died without water!\n")
+        typewriter("oh dear Betty is not pleased and the wedding is off.\n")
+        print()
+        game_over()
 
 
 
@@ -198,10 +204,10 @@ def chapter_four():
         chapter_five()
 
     elif forth_response == 'yes' or forth_response == 'Yes':        
-        typewriter(
-            "Oh dear, Harry overslept .....\n"
-            "he missed the wedding!\n"
-            "Game Over")
+        typewriter("Oh dear, Harry overslept .....\n")
+        typewriter("he missed the wedding!\n")
+        print()
+        game_over()
 
 
 
@@ -219,7 +225,7 @@ def chapter_five():
     typewriter('"I can show you the way to a very fine pail."\n')
     fifth_response = input("Should Harry follow the snail ? \n (yes/no)\n")
     if fifth_response == 'no' or fifth_response == 'No':
-        print("")
+        print()
         chapter_six()
 
     elif fifth_response == 'yes' or fifth_response == 'Yes':        
@@ -230,7 +236,8 @@ def chapter_five():
         typewriter("… it took more than a day.\n")
         print()
         typewriter("Harry has missed the wedding\n")
-        typewriter("Game Over")
+        print()
+        game_over()
 
 
 
@@ -269,7 +276,7 @@ def game_over():
     print("##############################")
     print("")
 
-    game_over()
+    
 
 intro()
   
