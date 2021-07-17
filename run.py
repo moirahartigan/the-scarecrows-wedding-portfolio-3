@@ -14,13 +14,11 @@ def welcome_msg():
     Function to print welcome graphics
     """
     print()
-    print("#############################################################################\n")
-    print("#                                                                           #\n")
-    print("#                          The Scarecrows Wedding                           #\n")
-    print("#           _________      At Diddly Squat Farm                             #\n")
-    print("#          |         |                                                      #\n")
-    print("#          |         |                                                      #\n")
-    print("#  ________|_________|_________               | *\_/* |________             #\n")
+    typewriter("########################################################################\n")
+    print("#           _________            Welcome to                                 #\n")
+    print("#          |         |      The Scarecrows Wedding                          #\n")
+    print("#          |         |        At Diddly Squat                               #\n")
+    print("#  ________|_________|_________     Farm      | *\_/* |________             #\n")
     print("#      |   ____________   |                 | |__/-\__|_____   |            #\n")                                
     print("#      |  |            |  |                 |  |            |  |            #\n")
     print("#      |  |   0    0   |  |                 |  |   0    0   |  |            #\n")
@@ -31,48 +29,60 @@ def welcome_msg():
     print("#      |_______|/ \|______|                 |_______*****______|            #\n")
     print("# _\_______|____________|________/_   _\_______|__________|__________/_     #\n")
     print("#  /                             \     /                             \      #\n")
-    print("###########################################################################\n\n")
+    typewriter("######################################################################\n\n")
     print("")
 
-intro = "Hello! \n\
-Welcome to Diddly Squat Farm. \n\
-There is a big event happening today. \n "
+intro = "Hello!"
+
+
 
 
 # typewriter style animation code adpted from https://www.youtube.com/watch?v=2h8e0tXHfk0
 def typewriter(intro): 
     """
-    Text will be displayed letter by letter using sys import rater than a
+    This function allows the text to be displayed letter by letter using sys import rater than a
     whole block of text - A time delay added will apply at the end of each 
     sentance for 1 second unless "\n" is used.
     """
 
-    for char in intro:
-        sys.stdout.write(char) #print each character - print it
+    for character in intro:
+        sys.stdout.write(character) #print each character - print it
         sys.stdout.flush() # display it
 
-        if char != "\n":
-            time.sleep(0.03) # wait until until the next character
+        if character == "#\n":
+            time.sleep(0.005) # wait until until the next character
         else:
-            time.sleep(0.5) # 0.5 sec delay for the end of each sentance
+            time.sleep(0.03) # 0.5 sec delay for the end of each sentance
 
 typewriter(intro)    
 welcome_msg()
 
 
 def intro():
-    name = str(input("What is your name: \n")) 
-    print()
-    typewriter(f"Welcome to The Scarecrows Wedding {name}, Thank you for joining us. \n")
-
-    first_response = input("Would you like to start the game? \n (yes/no): \n")
-    if first_response == 'yes' or first_response == 'Yes':
-        print("")
-        chapter_one()
-
-    elif first_response == 'no' or first_response == 'No':
+    """
+    Intro function begins the game and welcomes the user
+    by requesting their name in order to play
+    """
+    while True:
+        # while loop to ensure user adds their name
+        name = str(input("Please Tell me your name: \n")) 
+        if name == "":
+            print("We need to check your name off the guestlist to continue ....\n")
+            continue
+        else:
+            break
+    typewriter(f"Welcome to Diddly Squat Farm {name}, \n") 
+    typewriter("Thank you for joining us\n")
+    typewriter("for the Scarecrows Wedding.\n")
+    
+    startGame = input("Would you like to start the game? \n (yes/no): \n")
+    if startGame == 'no' or startGame == 'No':
         game_over("Maybe next time. Goodbye")
-
+        
+    elif startGame == 'yes' or startGame == 'Yes':
+        print()
+        chapter_one()
+                  
 
 def chapter_one():     
     typewriter("Ok Great ! \n")
@@ -91,13 +101,13 @@ def chapter_one():
     typewriter("And set off on a hunt round the farm. \n")
     print("")
     print("")
-    second_response = input("Can you help Harry find some Pink flowers for the list \n"
+    first_response = input("Can you help Harry find some Pink flowers for the list \n"
                             "and get back for his wedding?\n(yes/no) : \n")
-    if second_response == 'yes' or second_response == 'Yes':
+    if first_response == 'yes' or first_response == 'Yes':
         print("")
         chapter_two()
 
-    elif second_response == 'no' or second_response == 'No':
+    elif first_response == 'no' or first_response == 'No':
         typewriter(
             "Too bad, it would have been the best wedding yet. Goodbye.")
         
@@ -119,17 +129,17 @@ def chapter_two():
     typewriter(" 2.) Go to the farm shop to buy some flowers instead \n")
     typewriter(" 3.) Call the florist and have them deliver the flowers \n")
     print("")
-    choice = input("Choose option (1, 2 or 3): \n ")
-    if choice == '1':
+    second_response = input("Choose option (1, 2 or 3): \n ")
+    if second_response == '1':
         print()
         # if user picks option 1 there move to the next 
         chapter_three()
-    elif choice == '2':
+    elif second_response == '2':
         print()
         typewriter(" oh no the Farm Shop is sold out\n")
         typewriter(" Betty is not pleased\n")
         typewriter(" The Wedding is off ! - Game Over")
-    elif choice == '3':
+    elif second_response == '3':
         print()
         typewriter("You are a Scarecrrow !!! \n")
         typewriter("You have no phone to make the call and no money to pay for flowers.\n ")
@@ -213,21 +223,21 @@ def chapter_five():
         chapter_six()
 
     elif fifth_response == 'yes' or fifth_response == 'Yes':        
-        typewriter(
-            "So the snail and the scarecrow \n"
-            "Set off on their way,\n"
-            print()
-            "But the snail was so slow …\n"
-            "… it took more than a day.\n"
-            print()
-            "Harry has missed the wedding\n"
-            "Game Over")
+        typewriter("So the snail and the scarecrow \n")
+        typewriter("Set off on their way,\n")
+        print()
+        typewriter("But the snail was so slow …\n")
+        typewriter("… it took more than a day.\n")
+        print()
+        typewriter("Harry has missed the wedding\n")
+        typewriter("Game Over")
 
 
 
 def chapter_six():
     print()
-    typewriter("Good thinking - Harry fills up his hat\n")
+    typewriter("Good Advice\n")
+    typewriter("Harry fills up his hat\n")
     typewriter("And runs back for the pink flowers to put in his hat\n")
     print()
     typewriter("Suddenly\n")
@@ -239,7 +249,7 @@ def chapter_six():
     typewriter("So Betty O’Barley and Harry O’Hay\n")
     typewriter("Wed one another the very next day\n")
     print()
-    typewriter("Thanks for your help\n")
+    typewriter(f"Thanks for your help {name}, \n")
     typewriter("You helped make the best wedding ever, the best wedding yet,\n")
     typewriter("The wedding that no one will ever forget.\n")
 
@@ -261,4 +271,5 @@ def game_over():
 
     game_over()
 
-intro()  
+intro()
+  
