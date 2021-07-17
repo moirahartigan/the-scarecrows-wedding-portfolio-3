@@ -126,14 +126,14 @@ def chapter_two():
         chapter_three()
     elif choice == '2':
         print()
-        print(" oh no the Farm Shop is sold out \n")
-        print(" Betty is not pleased \n")
-        print(" The Wedding is off ! - Game Over")
+        typewriter(" oh no the Farm Shop is sold out\n")
+        typewriter(" Betty is not pleased\n")
+        typewriter(" The Wedding is off ! - Game Over")
     elif choice == '3':
         print()
-        print("You are a Scarecrrow !!! \n")
-        print("You have no phone to make the call and no money to pay for flowers.\n ")
-        print("Game Over")   
+        typewriter("You are a Scarecrrow !!! \n")
+        typewriter("You have no phone to make the call and no money to pay for flowers.\n ")
+        typewriter("Game Over")   
 
     
         
@@ -149,12 +149,12 @@ def chapter_two():
 
 
 def chapter_three():    
-    print("So the bee led the way, and they travelled for hours\n")
-    print("Till they come to a field full of pretty pink flowers.\n")
-    print('Harry is now thinking "I wont pick them yet.\n')
-    print('I will need to find water, to keep their stalks wet.” \n')
+    typewriter("So the bee led the way, and they travelled for hours\n")
+    typewriter("Till they come to a field full of pretty pink flowers.\n")
+    typewriter('Harry is now thinking "I wont pick them yet.\n')
+    typewriter('I will need to find water, to keep their stalks wet.” \n')
     print()
-    third_response = input("Do you think Harry needs to find water?: \n (yes/no) \n")
+    third_response = input("Do you think Harry needs to find water?: \n (yes/no)\n")
     if third_response == 'yes' or third_response == 'Yes':
         print("")
         chapter_four()
@@ -172,19 +172,78 @@ def chapter_three():
 
 def chapter_four():
     print()
-    
-    
+    typewriter('"Just follow me",\n')
+    typewriter("croaked a lumpy old toad.\n")
+    typewriter('There is a lovely wet pool at the top of this road."\n')
+    print()
+    typewriter("They climbed up the road.\n")
+    typewriter("It was terribly steep.\n")
+    print()
+    typewriter('"Im tired,” said the toad,\n')
+    typewriter('"Will we stop for a sleep?"\n')
+    print()
+    forth_response = input("Do you think Harry should stop for a sleep?: \n (yes/no)\n")
+    if forth_response == 'no' or forth_response == 'No':
+        print("")
+        chapter_five()
+
+    elif forth_response == 'yes' or forth_response == 'Yes':        
+        typewriter(
+            "Oh dear, Harry overslept .....\n"
+            "he missed the wedding!\n"
+            "Game Over")
+
 
 
 
 
 def chapter_five():
+    typewriter("Wise choice ! \n")
     print()
+    typewriter("Just over the hill they came to a pool.\n")
+    typewriter('"This water," said Harry, "is beautifully cool,\n')
+    typewriter("But now I need something to carry it in –\n")
+    typewriter('A jug or a vase or a cup or a tin."\n')
+    print()
+    typewriter('"I think I can help," said a small squirly snail.\n')
+    typewriter('"I can show you the way to a very fine pail."\n')
+    fifth_response = input("Should Harry follow the snail ? \n (yes/no)\n")
+    if fifth_response == 'no' or fifth_response == 'No':
+        print("")
+        chapter_six()
+
+    elif fifth_response == 'yes' or fifth_response == 'Yes':        
+        typewriter(
+            "So the snail and the scarecrow \n"
+            "Set off on their way,\n"
+            print()
+            "But the snail was so slow …\n"
+            "… it took more than a day.\n"
+            print()
+            "Harry has missed the wedding\n"
+            "Game Over")
 
 
 
 def chapter_six():
     print()
+    typewriter("Good thinking - Harry fills up his hat\n")
+    typewriter("And runs back for the pink flowers to put in his hat\n")
+    print()
+    typewriter("Suddenly\n")
+    print()
+    typewriter("Who should appear on the farm\n")
+    typewriter("But Harry O’Hay,\n")
+    typewriter("With a hat of pink flowers in his arm.\n")
+    print()
+    typewriter("So Betty O’Barley and Harry O’Hay\n")
+    typewriter("Wed one another the very next day\n")
+    print()
+    typewriter("Thanks for your help\n")
+    typewriter("You helped make the best wedding ever, the best wedding yet,\n")
+    typewriter("The wedding that no one will ever forget.\n")
+
+
 
 
 
