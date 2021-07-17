@@ -28,10 +28,11 @@ def welcome_msg():
     print("#      |_______|/ \|______|                 |_______*****______|            #")
     print("# _\_______|____________|________/_   _\_______|__________|__________/_     #")
     print("#  /                             \     /                             \      #")
-    print("#########################################################################\n\n")
-    print("")
+    print("#############################################################################")
+    print()
 
 intro = "Hello!"
+print()
 
 
 # typewriter style animation code adpted from https://www.youtube.com/watch?v=2h8e0tXHfk0
@@ -60,8 +61,10 @@ def intro():
     Intro function begins the game and welcomes the user
     by requesting their name in order to play
     """
+    # while loop to ensure user adds their name
     while True:
-        # while loop to ensure user adds their name
+        # make name a global variable to be used in other functions
+        global name
         name = str(input("Please Tell me your name: \n")) 
         if name == "":
             print("We need to check your name off the guestlist to continue ....\n")
@@ -240,7 +243,8 @@ def chapter_six():
     typewriter(f"Thanks for your help {name}, \n")
     typewriter("You helped make the best wedding ever, the best wedding yet,\n")
     typewriter("The wedding that no one will ever forget.\n")
-
+    print()
+    happy_ending()
 
 def game_over():
     """
@@ -253,6 +257,16 @@ def game_over():
     print("#                            #")
     print("##############################")
     print("")
+
+
+def happy_ending():
+    for row in range(6):
+        for col in range(7):
+            if (row == 0 and col % 3 != 0) or (row == 1 and col % 3 == 0) or (row - col == 2) or (row + col == 8):
+                print("*", end = "")
+            else:
+                print(end = " ")
+    print()
 
   
 intro()
