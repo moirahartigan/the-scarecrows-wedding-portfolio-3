@@ -8,7 +8,6 @@ import sys
 import time
 
 
-
 def welcome_msg():
     """
     Function to print welcome graphics
@@ -33,8 +32,6 @@ def welcome_msg():
     print("")
 
 intro = "Hello!"
-
-
 
 
 # typewriter style animation code adpted from https://www.youtube.com/watch?v=2h8e0tXHfk0
@@ -115,9 +112,6 @@ def chapter_one():
         game_over()
         
        
-
-
-
 def chapter_two():
     typewriter("Pink Flowers were the only thing left on the list \n")
     typewriter('Harry said “Betty, dear, I can find those. \n')
@@ -149,19 +143,13 @@ def chapter_two():
         typewriter("You are a Scarecrrow !!! \n")
         typewriter("You have no phone to make the call and no money to pay for flowers.\n ")
         print()
-        game_over()  
-
-    
-        
+        game_over()        
 
    # else:
     #     typewriter(" I dont understand that. Please type yes or no.")
      #    print("")
       #   second_response = input(" \n Can you help Harry find some Pink flowers for the list \n"
        # "and get back for his wedding?\n(yes/no) : \n")
-
-       
-
 
 
 def chapter_three():    
@@ -181,9 +169,6 @@ def chapter_three():
         typewriter("oh dear Betty is not pleased and the wedding is off.\n")
         print()
         game_over()
-
-
-
 
 
 def chapter_four():
@@ -208,9 +193,6 @@ def chapter_four():
         typewriter("he missed the wedding!\n")
         print()
         game_over()
-
-
-
 
 
 def chapter_five():
@@ -240,7 +222,6 @@ def chapter_five():
         game_over()
 
 
-
 def chapter_six():
     print()
     typewriter("Good Advice\n")
@@ -261,9 +242,6 @@ def chapter_six():
     typewriter("The wedding that no one will ever forget.\n")
 
 
-
-
-
 def game_over():
     """
     Function for when the user chooses the wrong option/ answer Prints game over and the reason why
@@ -276,7 +254,6 @@ def game_over():
     print("##############################")
     print("")
 
-    
-
+  
 intro()
   
