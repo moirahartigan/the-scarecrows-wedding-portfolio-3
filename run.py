@@ -117,17 +117,21 @@ def chapter_one():
     typewriter("And set off on a hunt round the farm. \n")
     print()
     print()
-    first_response = input("Can you help Harry find some Pink flowers for the list \n"
+    while True:
+        first_response = input("Can you help Harry find some Pink flowers for the list \n"
                             "and get back for his wedding?\n(yes/no) : \n")
-    if first_response == 'yes' or first_response == 'Yes':
-        print()
-        chapter_two()
+        if first_response == 'yes' or first_response == 'Yes':
+            print()
+            chapter_two()
 
-    elif first_response == 'no' or first_response == 'No':
-        typewriter("Too bad, it would have been the best wedding yet. Goodbye.")
-        print()
-        game_over()
+        elif first_response == 'no' or first_response == 'No':
+            typewriter("Too bad, it would have been the best wedding yet. Goodbye.")
+            print()
+            game_over()
         
+        else:
+            typewriter("Hmmmm .... I dont understand that. Please type yes or no.\n")
+            print()
        
 def chapter_two():
     """
@@ -149,24 +153,29 @@ def chapter_two():
     typewriter(" 2.) Go to the farm shop to buy some flowers instead \n")
     typewriter(" 3.) Call the florist and have them deliver the flowers \n")
     print()
-    second_response = input("Choose option (1, 2 or 3): \n ")
-    if second_response == '1':
-        print()
+    while True:
+        second_response = input("Choose option (1, 2 or 3): \n ")
+        if second_response == '1':
+            print()
         # if user picks option 1 there move to the next 
-        chapter_three()
-    elif second_response == '2':
-        print()
-        typewriter(" oh no the Farm Shop is sold out\n")
-        typewriter(" Betty is not pleased\n")
-        typewriter(" The Wedding is off !")
-        print()
-        game_over()
-    elif second_response == '3':
-        print()
-        typewriter("You are a Scarecrrow !!! \n")
-        typewriter("You have no phone to make the call and no money to pay for flowers.\n ")
-        print()
-        game_over()        
+            chapter_three()
+        elif second_response == '2':
+            print()
+            typewriter(" oh no the Farm Shop is sold out\n")
+            typewriter(" Betty is not pleased\n")
+            typewriter(" The Wedding is off !")
+            print()
+            game_over()
+        elif second_response == '3':
+            print()
+            typewriter("You are a Scarecrrow !!! \n")
+            typewriter("You have no phone to make the call and no money to pay for flowers.\n ")
+            print()
+            game_over()
+
+        else:
+            typewriter("Hmmmm .... I dont understand that. Please type yes or no.\n")
+            print()        
 
 
 def chapter_three(): 
@@ -179,17 +188,23 @@ def chapter_three():
     typewriter('Harry is now thinking "I wont pick them yet.\n')
     typewriter('I will need to find water, to keep their stalks wet.” \n')
     print()
-    third_response = input("Do you think Harry needs to find water?: \n (yes/no)\n")
-    if third_response == 'yes' or third_response == 'Yes':
-        print("")
-        chapter_four()
+    while True:
+        third_response = input("Do you think Harry needs to find water?: \n (yes/no)\n")
+        if third_response == 'yes' or third_response == 'Yes':
+            print("")
+            chapter_four()
 
-    elif third_response == 'no' or third_response == 'No':        
-        typewriter("Harry returns with the flowers..... \n")
-        typewriter("but they have died without water!\n")
-        typewriter("oh dear Betty is not pleased and the wedding is off.\n")
-        print()
-        game_over()
+        elif third_response == 'no' or third_response == 'No':        
+            typewriter("Harry returns with the flowers..... \n")
+            typewriter("but they have died without water!\n")
+            typewriter("oh dear Betty is not pleased and the wedding is off.\n")
+            print()
+            game_over()
+
+        else:
+            typewriter("Hmmmm .... I dont understand that. Please type yes or no.\n")
+            print()
+
 
 
 def chapter_four():
@@ -208,16 +223,21 @@ def chapter_four():
     typewriter('"Im tired,” said the toad,\n')
     typewriter('"Will we stop for a sleep?"\n')
     print()
-    forth_response = input("Do you think Harry should stop for a sleep?: \n (yes/no)\n")
-    if forth_response == 'no' or forth_response == 'No':
-        print("")
-        chapter_five()
+    while True:
+        forth_response = input("Do you think Harry should stop for a sleep?: \n (yes/no)\n")
+        if forth_response == 'no' or forth_response == 'No':
+            print("")
+            chapter_five()
 
-    elif forth_response == 'yes' or forth_response == 'Yes':        
-        typewriter("Oh dear, Harry overslept .....\n")
-        typewriter("he missed the wedding!\n")
-        print()
-        game_over()
+        elif forth_response == 'yes' or forth_response == 'Yes':        
+            typewriter("Oh dear, Harry overslept .....\n")
+            typewriter("he missed the wedding!\n")
+            print()
+            game_over()
+
+        else:
+            typewriter("Hmmmm .... I dont understand that. Please type yes or no.\n")
+            print()
 
 
 def chapter_five():
@@ -234,21 +254,26 @@ def chapter_five():
     print()
     typewriter('"I think I can help," said a small squirly snail.\n')
     typewriter('"I can show you the way to a very fine pail."\n')
-    fifth_response = input("Should Harry follow the snail ? \n (yes/no)\n")
-    if fifth_response == 'no' or fifth_response == 'No':
-        print()
-        chapter_six()
+    while True:
+        fifth_response = input("Should Harry follow the snail ? \n (yes/no)\n")
+        if fifth_response == 'no' or fifth_response == 'No':
+            print()
+            chapter_six()
 
-    elif fifth_response == 'yes' or fifth_response == 'Yes':        
-        typewriter("So the snail and the scarecrow \n")
-        typewriter("Set off on their way,\n")
-        print()
-        typewriter("But the snail was so slow …\n")
-        typewriter("… it took more than a day.\n")
-        print()
-        typewriter("Harry has missed the wedding\n")
-        print()
-        game_over()
+        elif fifth_response == 'yes' or fifth_response == 'Yes':        
+            typewriter("So the snail and the scarecrow \n")
+            typewriter("Set off on their way,\n")
+            print()
+            typewriter("But the snail was so slow …\n")
+            typewriter("… it took more than a day.\n")
+            print()
+            typewriter("Harry has missed the wedding\n")
+            print()
+            game_over()
+        
+        else:
+            typewriter("Hmmmm .... I dont understand that. Please type yes or no.\n")
+            print()
 
 
 def chapter_six():
