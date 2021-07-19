@@ -10,6 +10,9 @@
 import sys
 import time
 
+ # name to be a global variable to allow it to be used in other functions
+global name
+name = str(input("Please Tell me your name: \n")) 
 
 def welcome_msg():
     """
@@ -45,7 +48,6 @@ def print_text(text):
     whole block of text - A time delay added will apply at the end of each 
     sentance for 1 second unless "\n" is used.
     """
-
     for character in text:
         sys.stdout.write(character) #print each character - print it
         sys.stdout.flush() # display it
@@ -67,9 +69,6 @@ def intro():
     """
     # while loop to ensure user adds their name
     while True:
-        # make name a global variable to be used in other functions
-        global name
-        name = str(input("Please Tell me your name: \n")) 
         if name == "":
             print("We need to check your name off the guestlist to continue ....\n")
             continue
