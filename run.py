@@ -74,17 +74,27 @@ def intro():
     typewriter(f"Welcome to Diddly Squat Farm {name}, \n") 
     typewriter("Thank you for joining us\n")
     typewriter("for the Scarecrows Wedding.\n")
-    
-    startGame = input("Would you like to start the game? \n (yes/no): \n")
-    if startGame == 'no' or startGame == 'No':
-        typewriter("Maybe next time. Goodbye")
-        print()
-        game_over()
+    print()
+    start_game()
+
+def start_game():
+
+    while True:
+        startGame = input("Would you like to start the game? \n (yes/no): \n")
+        if startGame == 'no' or startGame == 'No':
+            typewriter("Maybe next time. Goodbye")
+            print()
+            game_over()
         
-    elif startGame == 'yes' or startGame == 'Yes':
-        print()
-        chapter_one()
-                  
+        elif startGame == 'yes' or startGame == 'Yes':
+            print()
+            chapter_one()
+
+        else:
+            typewriter("Hmmmm .... I dont understand that. Please type yes or no.\n")
+            print()
+            
+                    
 
 def chapter_one():
     """
@@ -157,12 +167,6 @@ def chapter_two():
         typewriter("You have no phone to make the call and no money to pay for flowers.\n ")
         print()
         game_over()        
-
-   # else:
-    #     typewriter(" I dont understand that. Please type yes or no.")
-     #    print("")
-      #   second_response = input(" \n Can you help Harry find some Pink flowers for the list \n"
-       # "and get back for his wedding?\n(yes/no) : \n")
 
 
 def chapter_three(): 
