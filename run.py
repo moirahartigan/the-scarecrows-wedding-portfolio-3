@@ -2,6 +2,9 @@
 # Story taken and adapted from a book of the same name By Julia Donaldson
 # By Moira Hartigan
 
+# This is a story about The scarecrows wedding - You have been invited but
+# Harry needs your help fining the last item from his list so the wedding can go ahead. 
+
 
 # Import time and sys to print typewriter effect.
 import sys
@@ -28,22 +31,22 @@ def welcome_msg():
     print("#      |_______|/ \|______|                 |_______*****______|            #")
     print("# _\_______|____________|________/_   _\_______|__________|__________/_     #")
     print("#  /                             \     /                             \      #")
+    print("#                                                                           #")
+    print("#        Harry needs help finding the last item for his wedding             #")                                                    
     print("#############################################################################")
     print()
 
-intro = "Hello!"
-print()
 
 
 # typewriter style animation code adpted from https://www.youtube.com/watch?v=2h8e0tXHfk0
-def print_text(intro): 
+def print_text(text): 
     """
     This function allows the text to be displayed letter by letter using sys import rater than a
     whole block of text - A time delay added will apply at the end of each 
     sentance for 1 second unless "\n" is used.
     """
 
-    for character in intro:
+    for character in text:
         sys.stdout.write(character) #print each character - print it
         sys.stdout.flush() # display it
 
@@ -52,7 +55,7 @@ def print_text(intro):
         else:
             time.sleep(0.03) # 0.5 sec delay for the end of each sentance
 
-print_text(intro)    
+   
 welcome_msg()
 
 
@@ -86,15 +89,15 @@ def start_game():
             print_text("Maybe next time. Goodbye")
             print()
             game_over()
-        
+            break
         elif startGame == 'yes' or startGame == 'Yes':
             print()
             chapter_one()
-
+            continue
         else:
             print_text("Hmmmm .... I dont understand that. Please type yes or no.\n")
             print()
-            
+            continue
                     
 
 def chapter_one():
@@ -124,16 +127,16 @@ def chapter_one():
         if first_response == 'yes' or first_response == 'Yes':
             print()
             chapter_two()
-
+            continue
         elif first_response == 'no' or first_response == 'No':
             print_text("Too bad, it would have been the best wedding yet. Goodbye.")
             print()
             game_over()
-        
+            break
         else:
             print_text("Hmmmm .... I dont understand that. Please type yes or no.\n")
             print()
-       
+            continue
 def chapter_two():
     """
     function allow player onto the next chapter of the game
@@ -157,9 +160,9 @@ def chapter_two():
     while True:
         second_response = input("Choose option (1, 2 or 3): \n ")
         if second_response == '1':
-            print()
-        # if user picks option 1 there move to the next 
+            print() 
             chapter_three()
+            continue
         elif second_response == '2':
             print()
             print_text(" oh no the Farm Shop is sold out\n")
@@ -167,17 +170,18 @@ def chapter_two():
             print_text(" The Wedding is off !")
             print()
             game_over()
+            break
         elif second_response == '3':
             print()
             print_text("You are a Scarecrrow !!! \n")
             print_text("You have no phone to make the call and no money to pay for flowers.\n ")
             print()
             game_over()
-
+            break
         else:
             print_text("Hmmmm .... I dont understand that. Please type yes or no.\n")
             print()        
-
+            continue
 
 def chapter_three(): 
     """
@@ -194,18 +198,18 @@ def chapter_three():
         if third_response == 'yes' or third_response == 'Yes':
             print("")
             chapter_four()
-
+            continue
         elif third_response == 'no' or third_response == 'No':        
             print_text("Harry returns with the flowers..... \n")
             print_text("but they have died without water!\n")
             print_text("oh dear Betty is not pleased and the wedding is off.\n")
             print()
             game_over()
-
+            break
         else:
             print_text("Hmmmm .... I dont understand that. Please type yes or no.\n")
             print()
-
+            continue
 
 
 def chapter_four():
@@ -229,17 +233,17 @@ def chapter_four():
         if forth_response == 'no' or forth_response == 'No':
             print("")
             chapter_five()
-
+            continue
         elif forth_response == 'yes' or forth_response == 'Yes':        
             print_text("Oh dear, Harry overslept .....\n")
             print_text("he missed the wedding!\n")
             print()
             game_over()
-
+            break
         else:
             print_text("Hmmmm .... I dont understand that. Please type yes or no.\n")
             print()
-
+            continue
 
 def chapter_five():
     """
@@ -260,7 +264,7 @@ def chapter_five():
         if fifth_response == 'no' or fifth_response == 'No':
             print()
             chapter_six()
-
+            continue
         elif fifth_response == 'yes' or fifth_response == 'Yes':        
             print_text("So the snail and the scarecrow \n")
             print_text("Set off on their way,\n")
@@ -271,11 +275,11 @@ def chapter_five():
             print_text("Harry has missed the wedding\n")
             print()
             game_over()
-        
+            break
         else:
             print_text("Hmmmm .... I dont understand that. Please type yes or no.\n")
             print()
-
+            continue
 
 def chapter_six():
     """
@@ -316,13 +320,24 @@ def game_over():
 
 
 def happy_ending():
-    for row in range(6):
-        for col in range(7):
-            if (row == 0 and col % 3 != 0) or (row == 1 and col % 3 == 0) or (row - col == 2) or (row + col == 8):
-                print("*", end = "")
-            else:
-                print(end = " ")
     print()
+    print("##############################")
+    print("#                            #")
+    print("#      ****     ****         #")
+    print("#     ******   ******        #")
+    print("#    ******** ********       #")
+    print("#    *****************       #")
+    print("#     ***************        #")
+    print("#      *************         #")
+    print("#       ***********          #")
+    print("#        *********           #")
+    print("#         *******            #")
+    print("#           ***              #")
+    print("#            *               #")
+    print("#                            #")
+    print("##############################")
+    print()
+
 
   
 intro()
