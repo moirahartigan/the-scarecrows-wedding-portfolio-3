@@ -86,7 +86,11 @@ def intro():
         chapter_one()
                   
 
-def chapter_one():     
+def chapter_one():
+    """
+    Function to move the player into the first chapter of the game 
+    once they have agreed to play
+    """     
     typewriter("Ok Great ! \n")
     typewriter("Here is the story so far ...... \n")
     typewriter("Harry loved Betty and Betty loved Harry, \n")
@@ -116,6 +120,12 @@ def chapter_one():
         
        
 def chapter_two():
+    """
+    function allow player onto the next chapter of the game
+    after they agree to help Harry find the pink Flowers
+    otherwise the game ends. This level allows the player a choice for their 
+    response.
+    """
     typewriter("Pink Flowers were the only thing left on the list \n")
     typewriter('Harry said “Betty, dear, I can find those. \n')
     typewriter('Why don’t I pick some while you have a doze?” \n')
@@ -155,7 +165,11 @@ def chapter_two():
        # "and get back for his wedding?\n(yes/no) : \n")
 
 
-def chapter_three():    
+def chapter_three(): 
+    """
+    Function to allow player to move to chapter three
+    and looks for the player to give a yes/ no response
+    """   
     typewriter("So the bee led the way, and they travelled for hours\n")
     typewriter("Till they come to a field full of pretty pink flowers.\n")
     typewriter('Harry is now thinking "I wont pick them yet.\n')
@@ -175,6 +189,10 @@ def chapter_three():
 
 
 def chapter_four():
+    """
+    Function to move player into chapter four,
+    here the player uses yes/no again to choose an option 
+    """
     print()
     typewriter('"Just follow me",\n')
     typewriter("croaked a lumpy old toad.\n")
@@ -199,6 +217,10 @@ def chapter_four():
 
 
 def chapter_five():
+    """
+    The story continues to chapter 5 and a yes/ no response is requested 
+    here again
+    """
     typewriter("Wise choice ! \n")
     print()
     typewriter("Just over the hill they came to a pool.\n")
@@ -226,6 +248,10 @@ def chapter_five():
 
 
 def chapter_six():
+    """
+    Final chapter function where the story comes to an end and 
+    the user can read the ending, they are thanked for their help
+    """
     print()
     typewriter("Good Advice\n")
     typewriter("Harry fills up his hat\n")
