@@ -121,13 +121,13 @@ def chapter_one():
     print()
     print()
     while True:
-        first_response = input("Can you help Harry find some Pink flowers for the list \n"
+        response = input("Can you help Harry find some Pink flowers for the list \n"
                             "and get back for his wedding?\n(yes/no) : \n")
-        if first_response == 'yes' or first_response == 'Yes':
+        if response == 'yes' or response == 'Yes':
             print()
             chapter_two()
             continue
-        elif first_response == 'no' or first_response == 'No':
+        elif response == 'no' or response == 'No':
             print_text("Too bad, it would have been the best wedding yet. Goodbye.")
             print()
             game_over()
@@ -157,12 +157,12 @@ def chapter_two():
     print_text(" 3.) Call the florist and have them deliver the flowers \n")
     print()
     while True:
-        second_response = input("Choose option (1, 2 or 3): \n ")
-        if second_response == '1':
+        response = input("Choose option (1, 2 or 3): \n ")
+        if response == '1':
             print() 
             chapter_three()
             continue
-        elif second_response == '2':
+        elif response == '2':
             print()
             print_text(" oh no the Farm Shop is sold out\n")
             print_text(" Betty is not pleased\n")
@@ -170,7 +170,7 @@ def chapter_two():
             print()
             game_over()
             break
-        elif second_response == '3':
+        elif response == '3':
             print()
             print_text("You are a Scarecrrow !!! \n")
             print_text("You have no phone to make the call and no money to pay for flowers.\n ")
@@ -193,12 +193,12 @@ def chapter_three():
     print_text('I will need to find water, to keep their stalks wet.” \n')
     print()
     while True:
-        third_response = input("Do you think Harry needs to find water?: \n (yes/no)\n")
-        if third_response == 'yes' or third_response == 'Yes':
+        response = input("Do you think Harry needs to find water?: \n (yes/no)\n")
+        if response == 'yes' or response == 'Yes':
             print("")
             chapter_four()
             continue
-        elif third_response == 'no' or third_response == 'No':        
+        elif response == 'no' or response == 'No':        
             print_text("Harry returns with the flowers..... \n")
             print_text("but they have died without water!\n")
             print_text("oh dear Betty is not pleased and the wedding is off.\n")
@@ -228,12 +228,12 @@ def chapter_four():
     print_text('"Will we stop for a sleep?"\n')
     print()
     while True:
-        forth_response = input("Do you think Harry should stop for a sleep?: \n (yes/no)\n")
-        if forth_response == 'no' or forth_response == 'No':
+        response = input("Do you think Harry should stop for a sleep?: \n (yes/no)\n")
+        if response == 'no' or response == 'No':
             print("")
             chapter_five()
             continue
-        elif forth_response == 'yes' or forth_response == 'Yes':        
+        elif response == 'yes' or response == 'Yes':        
             print_text("Oh dear, Harry overslept .....\n")
             print_text("he missed the wedding!\n")
             print()
@@ -259,12 +259,12 @@ def chapter_five():
     print_text('"I think I can help," said a small squirly snail.\n')
     print_text('"I can show you the way to a very fine pail."\n')
     while True:
-        fifth_response = input("Should Harry follow the snail ? \n (yes/no)\n")
-        if fifth_response == 'no' or fifth_response == 'No':
+        response = input("Should Harry follow the snail ? \n (yes/no)\n")
+        if response == 'no' or response == 'No':
             print()
             chapter_six()
             continue
-        elif fifth_response == 'yes' or fifth_response == 'Yes':        
+        elif response == 'yes' or response == 'Yes':        
             print_text("So the snail and the scarecrow \n")
             print_text("Set off on their way,\n")
             print()
