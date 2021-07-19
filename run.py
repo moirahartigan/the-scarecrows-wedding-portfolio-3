@@ -12,7 +12,7 @@ import time
 
  # name to be a global variable to allow it to be used in other functions
 global name
-name = str(input("Please Tell me your name: \n")) 
+
 
 def welcome_msg():
     """
@@ -69,6 +69,7 @@ def intro():
     """
     # while loop to ensure user adds their name
     while True:
+        name = str(input("Please Tell me your name: \n")) 
         if name == "":
             print("We need to check your name off the guestlist to continue ....\n")
             continue
