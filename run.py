@@ -49,7 +49,7 @@ def print_text(text):
     sentance for 1 second unless "\n" is used.
     """
     for character in text:
-        sys.stdout.write(character) #print each character - print it
+        sys.stdout.write(character) # print each character - print it
         sys.stdout.flush() # display it
 
         if character == "\n":
@@ -84,13 +84,13 @@ def intro():
 def start_game():
 
     while True:
-        startGame = input("Would you like to start the game? \n (yes/no): \n")
-        if startGame == 'no' or startGame == 'No':
+        response = input("Would you like to start the game? \n (yes/no): \n")
+        if response.lower().strip() == 'no':
             print_text("Maybe next time. Goodbye")
             print()
             game_over()
             break
-        elif startGame == 'yes' or startGame == 'Yes':
+        elif response.lower().strip() == 'yes':
             print()
             chapter_one()
             continue
@@ -107,6 +107,7 @@ def chapter_one():
     """     
     print_text("Ok Great ! \n")
     print_text("Here is the story so far ...... \n")
+    print_text("Betty O'Barley and Harry O'Hay are scarecrows, \n")
     print_text("Harry loved Betty and Betty loved Harry, \n")
     print_text('So Harry said, “Betty, my beauty, lets marry!\n')
     print_text("Lets have a wedding, the best wedding yet,\n")
@@ -124,11 +125,11 @@ def chapter_one():
     while True:
         response = input("Can you help Harry find some Pink flowers for the list \n"
                             "and get back for his wedding?\n(yes/no) : \n")
-        if response == 'yes' or response == 'Yes':
+        if response.lower().strip() == 'yes':
             print()
             chapter_two()
             continue
-        elif response == 'no' or response == 'No':
+        elif response.lower().strip() == 'no':
             print_text("Too bad, it would have been the best wedding yet. Goodbye.")
             print()
             game_over()
@@ -195,11 +196,11 @@ def chapter_three():
     print()
     while True:
         response = input("Do you think Harry needs to find water?: \n (yes/no)\n")
-        if response == 'yes' or response == 'Yes':
+        if response.lower().strip() == 'yes':
             print("")
             chapter_four()
             continue
-        elif response == 'no' or response == 'No':        
+        elif response.lower().strip() == 'no':        
             print_text("Harry returns with the flowers..... \n")
             print_text("but they have died without water!\n")
             print_text("oh dear Betty is not pleased and the wedding is off.\n")
@@ -230,11 +231,11 @@ def chapter_four():
     print()
     while True:
         response = input("Do you think Harry should stop for a sleep?: \n (yes/no)\n")
-        if response == 'no' or response == 'No':
+        if response.lower().strip() == 'no':
             print("")
             chapter_five()
             continue
-        elif response == 'yes' or response == 'Yes':        
+        elif response.lower().strip() == 'yes':        
             print_text("Oh dear, Harry overslept .....\n")
             print_text("he missed the wedding!\n")
             print()
@@ -261,11 +262,11 @@ def chapter_five():
     print_text('"I can show you the way to a very fine pail."\n')
     while True:
         response = input("Should Harry follow the snail ? \n (yes/no)\n")
-        if response == 'no' or response == 'No':
+        if response.lower().strip() == 'no':
             print()
             chapter_six()
             continue
-        elif response == 'yes' or response == 'Yes':        
+        elif response.lower().strip() == 'yes':        
             print_text("So the snail and the scarecrow \n")
             print_text("Set off on their way,\n")
             print()
