@@ -39,7 +39,7 @@ def welcome_msg():
     print("# _\_______|____________|________/_   _\_______|__________|__________/_     #")
     print("#  /                             \     /                             \      #")
     print("#                                                                           #")
-    print("#        Harry needs help finding the last item for his wedding             #")                                                    
+    print("#        Harry & Betty need your help for their wedding                     #")                                                    
     print("#############################################################################")
     print()
 
@@ -147,25 +147,32 @@ def chapter_one():
 
 
 def wedding_vows():
+    """
+    user takes a different route if they choose not to help Harry find flowers
+    instead the user helps betty write her wedding vows
+    """
     emotion = input("Enter an emotion : ")
-    second_emotion = input("Enter another emotion :")
-    noun = input("Enter a noun (A person, place or thing) :")
-    adjective = input("Enter an adjective (A word that describes a noun : ")
+    noun = input("Enter a noun (A person, place or thing) : ")
+    adjective = input("Enter an adjective (A word that describes a noun) : ")
     second_adjective = input("Enter another adjective : ")
-    verb = input("Enter a verb (A word that describes an action) : ")
     number = input("Enter a number less than 10: ")
     bigger_number = input("Enter a number greater than 10: ")
-
-
-    print_text(f"I am so {emotion} to have you all here today at out {adjective} wedding.\n")
-    print_text(f"Our good friend {} has helped me put these {second_adjective} words\n."format(name))
-    print_text(f"together, to help me tell you all how {second_emotion} I am to be getting married\n")
-    print_text("to Harry today\n")
+    
     print()
-    print_text(f"Harry, You are my constant {noun}. \n")
+    print_text("Nice work .... you make a good team \n")
+    print_text("Lets see what you came up with! \n")
+    print()
+    print_text("Betty's wedding vows \n")
+    print_text("####################\n")
+    print()
+    print_text(f"I am so {emotion} to have you all here today at our {adjective} wedding.\n")
+    print_text("I promise to love you Harry, as long as we both shall live. \n")
+    print_text(f"I offer my {second_adjective} vow to be your \n")
+    print_text(f"forever {noun} in sickness and in health.\n")
+    print()
     print_text(f"Ive known you for {number} years and I hope to be married to you \n")
     print(f"for at least another {bigger_number} more years.\n")
-
+    chapter 
 
 def chapter_two():
     """
@@ -328,10 +335,13 @@ def chapter_six():
     print_text("But Harry O’Hay,\n")
     print_text("With a hat of pink flowers in his arm.\n")
     print()
+    chapter_seven()
+
+def chapter_seven():
     print_text("So Betty O’Barley and Harry O’Hay\n")
     print_text("Wed one another the very next day\n")
     print()
-    print_text(f"Thanks for your help {name}, \n")
+    print_text("Thanks for your help,\n")
     print_text("You helped make the best wedding ever, the best wedding yet,\n")
     print_text("The wedding that no one will ever forget.\n")
     print()
@@ -368,6 +378,20 @@ def happy_ending():
     print("#                            #")
     print("##############################")
     print()
+    play_again()
+
+
+def play_again():
+    """
+    Function to allow the user to restart
+    the game from the terminal
+    """
+    print("To play again click the 'Run Programme' button\n")
+    response = input("Or type 'yes': \n")
+    if response =="yes":
+        intro()
+    else:
+        print("Thanks for playing!")
 
 
 intro()
