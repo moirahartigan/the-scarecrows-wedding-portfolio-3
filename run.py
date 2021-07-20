@@ -10,8 +10,12 @@
 import sys
 import time
 
- # name to be a global variable to allow it to be used in other functions
-global name
+ # player name
+name = ""
+
+
+def player_name():
+    global name
 
 
 def welcome_msg():
@@ -130,22 +134,47 @@ def chapter_one():
             chapter_two()
             continue
         elif response.lower().strip() == 'no':
-            print_text("Too bad, it would have been the best wedding yet. Goodbye.")
+            print_text("Ok then, stay here, until Harry gets back.\n")
+            print_text("Betty needs your help anyway to write \n")
+            print_text("her wedding vows while Harry is off finding flowers.....\n")
             print()
-            game_over()
+            wedding_vows()
             break
         else:
             print_text("Hmmmm .... I dont understand that. Please type yes or no.\n")
             print()
             continue
+
+
+def wedding_vows():
+    emotion = input("Enter an emotion : ")
+    second_emotion = input("Enter another emotion :")
+    noun = input("Enter a noun (A person, place or thing) :")
+    adjective = input("Enter an adjective (A word that describes a noun : ")
+    second_adjective = input("Enter another adjective : ")
+    verb = input("Enter a verb (A word that describes an action) : ")
+    number = input("Enter a number less than 10: ")
+    bigger_number = input("Enter a number greater than 10: ")
+
+
+    print_text(f"I am so {emotion} to have you all here today at out {adjective} wedding.\n")
+    print_text(f"Our good friend {} has helped me put these {second_adjective} words\n."format(name))
+    print_text(f"together, to help me tell you all how {second_emotion} I am to be getting married\n")
+    print_text("to Harry today\n")
+    print()
+    print_text(f"Harry, You are my constant {noun}. \n")
+    print_text(f"Ive known you for {number} years and I hope to be married to you \n")
+    print(f"for at least another {bigger_number} more years.\n")
+
+
 def chapter_two():
     """
     function allow player onto the next chapter of the game
     after they agree to help Harry find the pink Flowers
-    otherwise the game ends. This level allows the player a choice for their 
+    otherwise the game ends. This level allows the player a choice in
     response.
     """
-    print_text("Pink Flowers were the only thing left on the list \n")
+    print_text("Flowers were the only thing left on the list \n")
     print_text('Harry said “Betty, dear, I can find those. \n')
     print_text('Why don’t I pick some while you have a doze?” \n')
     print()
@@ -183,6 +212,7 @@ def chapter_two():
             print_text("Hmmmm .... I dont understand that. Please type yes or no.\n")
             print()        
             continue
+
 
 def chapter_three(): 
     """
@@ -340,6 +370,5 @@ def happy_ending():
     print()
 
 
-  
 intro()
   
