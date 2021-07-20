@@ -200,7 +200,7 @@ def chapter_two():
         if response == '1':
             print() 
             chapter_three()
-            continue
+            
         elif response == '2':
             print()
             print_text(" oh no the Farm Shop is sold out\n")
@@ -208,18 +208,18 @@ def chapter_two():
             print_text(" The Wedding is off !")
             print()
             game_over()
-            break
+            
         elif response == '3':
             print()
             print_text("You are a Scarecrrow !!! \n")
             print_text("You have no phone to make the call and no money to pay for flowers.\n ")
             print()
             game_over()
-            break
+            
         else:
             print_text("Hmmmm .... I dont understand that. Please type yes or no.\n")
             print()        
-            continue
+            
 
 
 def chapter_three(): 
@@ -369,8 +369,8 @@ def happy_ending():
     print("#        ****     ****         #")
     print("#       ******   ******        #")
     print("#      ******** ********       #")
-    print("#      *****************       #")
-    print("#       ***************        #")
+    print("#      *******THE*******       #")
+    print("#       ******END******        #")
     print("#        *************         #")
     print("#         ***********          #")
     print("#          *********           #")
