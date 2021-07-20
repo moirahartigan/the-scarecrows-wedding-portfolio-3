@@ -172,7 +172,8 @@ def wedding_vows():
     print()
     print_text(f"Ive known you for {number} years and I hope to be married to you \n")
     print(f"for at least another {bigger_number} more years.\n")
-    chapter 
+    print()
+    chapter_seven()
 
 def chapter_two():
     """
@@ -338,7 +339,8 @@ def chapter_six():
     chapter_seven()
 
 def chapter_seven():
-    print_text("So Betty O’Barley and Harry O’Hay\n")
+    print_text("So ............ \n") 
+    print_text("Betty O’Barley and Harry O’Hay\n")
     print_text("Wed one another the very next day\n")
     print()
     print_text("Thanks for your help,\n")
@@ -362,21 +364,21 @@ def game_over():
 
 def happy_ending():
     print()
-    print("##############################")
-    print("#                            #")
-    print("#      ****     ****         #")
-    print("#     ******   ******        #")
-    print("#    ******** ********       #")
-    print("#    *****************       #")
-    print("#     ***************        #")
-    print("#      *************         #")
-    print("#       ***********          #")
-    print("#        *********           #")
-    print("#         *******            #")
-    print("#           ***              #")
-    print("#            *               #")
-    print("#                            #")
-    print("##############################")
+    print("################################")
+    print("#                              #")
+    print("#        ****     ****         #")
+    print("#       ******   ******        #")
+    print("#      ******** ********       #")
+    print("#      *****************       #")
+    print("#       ***************        #")
+    print("#        *************         #")
+    print("#         ***********          #")
+    print("#          *********           #")
+    print("#           *******            #")
+    print("#             ***              #")
+    print("#              *               #")
+    print("#                              #")
+    print("################################")
     print()
     play_again()
 
@@ -388,8 +390,8 @@ def play_again():
     """
     print("To play again click the 'Run Programme' button\n")
     response = input("Or type 'yes': \n")
-    if response =="yes":
-        intro()
+    if response.lower().strip() == "yes":
+        welcome_msg()
     else:
         print("Thanks for playing!")
 
