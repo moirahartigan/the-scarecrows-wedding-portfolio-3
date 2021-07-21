@@ -7,7 +7,7 @@ A text based game built with Python
 
 ## Demo
 
-[View the Live Website Here](https://moirahartigan.github.io/)
+[View the Live Website Here](https://the-scarecrows-wedding.herokuapp.com/)
 <p align ="center"> 
 <img src="">
 </p>
