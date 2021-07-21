@@ -154,6 +154,7 @@ def wedding_vows():
     user takes a different route if they choose not to help Harry find flowers
     instead the user helps betty write her wedding vows
     """
+    print("test")
     emotion = input("Enter an emotion : ")
     noun = input("Enter a noun (A person, place or thing) : ")
     adjective = input("Enter an adjective (A word that describes a noun) : ")
