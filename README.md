@@ -2,7 +2,7 @@
 
 
 ## Portfolio Project 3: _Python Essentials_
-A text based game built with Python
+A text based story game built with Python
 
 
 ## Demo
@@ -33,63 +33,24 @@ A text based game built with Python
 ***
 ***
 # Design
-This is a text-based game that the user will operate in the command line. The aim of the game is to .................. This game is completely written in Python.
+This is a text-based game that the user will operate in the command line. The story is taken from the Book "The Scarecrows Wedding" by Julia Donaldson and has been adapted into a text-based story game. The aim of the game is to help Harry find flowers for his wedding by helping him make some decisions along the way. If the user decides not to help Harry they are asked to help Betty instead and the story takes a different path and the user is then asked to input some data to help Betty write her wedding vows. This game is completely written in Python.
 
 
   [Logic Flow Chart](https://github.com/)
 ### Goals
   The main goal of this project is
 ### Audience
-  This game is aimed for all to paly.
+  This game is aimed for all to play, and as its been adapted from a childrens book, it is also suitable to a younger user.
 
 # Features
 
 ## Current Features
-
-### <em>Game Grid</em>
-
-
-<br>
++ The game has a welcome graphic displayed once the game app is opened
 
 <p align="center">  
-  <img src="">
- </p>
- 
-<br>
-<br>
-
-
-
-<br>
-<br>
-
- <p align="center">  
-  <img src="">
- </p>
- 
- <br>
- 
-
-
-
-<br>
-<br>
-
-<p align="center">  
-  <img src="">
- </p>
- 
- <br>
- <br>
- 
- 
- 
- <p align="center">  
-  <img src="">
+ <img src=""> 
  </p>
 
-<br>
-<br>
 
 
 
