@@ -141,7 +141,7 @@ def chapter_one():
                        "finding flowers.....\n")
             print()
             wedding_vows()
-            break
+            
         else:
             print_text("Hmmmm .... I dont understand that.\n")
             print_text("Please type yes or no.\n")
