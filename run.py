@@ -3,7 +3,7 @@
 # By Moira Hartigan
 
 # This is a story about The scarecrows wedding - You have been invited but
-# Harry needs your help fining the last item from his list so the wedding can go ahead. 
+# Harry and Betty need your help so the wedding can go ahead. 
 
 
 # Import time and sys to print typewriter effect.
@@ -86,6 +86,7 @@ def intro():
 
 def start_game():
     while True:
+        print()
         response = input("Would you like to start the game? \n (yes/no): \n")
         if response.lower().strip() == 'no':
             print_text("Maybe next time. Goodbye")
@@ -206,15 +207,15 @@ def chapter_two():
         if response == '1':
             print() 
             chapter_three()
-            
+            continue
         elif response == '2':
             print()
             print_text("oh no the Farm Shop is sold out\n")
             print_text("Betty is not pleased\n")
-            #print_text("The Wedding is off !")
+            print_text("The Wedding is off !")
             print()
-            game_over("The Wedding is off !\n", start_game)          
-          
+            game_over()          
+            break
         elif response == '3':
             print()
             print_text("You are a Scarecrrow !!! \n")
@@ -222,7 +223,7 @@ def chapter_two():
                        "to pay for the flowers.\n")
             print()
             game_over()
-            
+            break
         else:
             print_text("Hmmmm .... I dont understand that.\n")
             print_text("Please type yes or no.\n")
@@ -268,7 +269,6 @@ def chapter_four():
     Function to move player into chapter four,
     here the player uses yes/no again to choose an option 
     """
-    print()
     print_text('"Just follow me",\n')
     print_text("croaked a lumpy old toad.\n")
     print_text('There is a lovely wet pool at the top of this road."\n')
@@ -313,6 +313,7 @@ def chapter_five():
     print_text('"I think I can help," said a small squirly snail.\n')
     print_text('"I can show you the way to a very fine pail."\n')
     while True:
+        print()
         response = input("Should Harry follow the snail ? \n (yes/no)\n")
         if response.lower().strip() == 'no':
             print()
@@ -358,14 +359,14 @@ def chapter_seven():
     print_text("Betty O’Barley and Harry O’Hay\n")
     print_text("Wed one another the very next day\n")
     print()
-    print_text("Thanks for your help,\n")
+    print_text(f"Thanks for your help {name},\n")
     print_text("You helped make the best wedding ever, \n" 
                "the best wedding yet,\n")
     print_text("The wedding that no one will ever forget.\n")
     print()
     happy_ending()
 
-def game_over(msg, function):
+def game_over():
     """
     Function for when the user chooses the wrong option/ 
     answer Prints game over 
@@ -379,7 +380,8 @@ def game_over(msg, function):
     print("#                            #")
     print("##############################")
     print("")
-
+    play_again()
+    
 
 def happy_ending():
     print()
@@ -402,7 +404,7 @@ def happy_ending():
     play_again()
 
 
-def play_again(function):
+def play_again():
     """
     Function to allow the user to restart
     the game from the terminal
@@ -410,10 +412,9 @@ def play_again(function):
     """
     print("To play again click the 'Run Programme' button\n")
     print("or")
-    print()
     response = input("type 'yes': \n")
     if response.lower().strip() == "yes":
-        welcome_msg()
+        start_game()
     else:
         print("Thanks for playing!")
 
