@@ -14,43 +14,41 @@ import time
 name = ""
 
 
-def player_name():
-    global name
-
-
 def welcome_msg():
     """
     Function to print welcome graphics
     """
     print()
-    print("#############################################################################")
-    print("#           _________            Welcome to                                 #")
-    print("#          |         |      The Scarecrows Wedding                          #")
-    print("#          |         |        At Diddly Squat                               #")
-    print("#  ________|_________|_________     Farm      | *\_/* |________             #")
-    print("#      |   ____________   |                 | |__/-\__|_____   |            #")                                
-    print("#      |  |            |  |                 |  |            |  |            #")
-    print("#      |  |   0    0   |  |                 |  |   0    0   |  |            #")
-    print("#      |  |     -      |  |                 |  |      -     |  |            #")
-    print("#      |  |   \____/   |  |                 |  |    \___/   |  |            #")
-    print("#      |  |            |  |                 |  |            |  |            #")
-    print("#      |  |____|\_/|___|  |                 |  |____________|  |            #")
-    print("#      |_______|/ \|______|                 |_______*****______|            #")
-    print("# _\_______|____________|________/_   _\_______|__________|__________/_     #")
-    print("#  /                             \     /                             \      #")
-    print("#                                                                           #")
-    print("#        Harry & Betty need your help for their wedding                     #")                                                    
-    print("#############################################################################")
+    print("##################################################################")
+    print("#          ________          Welcome to                          #")
+    print("#         |        |     The Scarecrows Wedding                  #")
+    print("#         |        |                                             #")
+    print("#  _______|________|_________           | *\_/* |_______         #")
+    print("#     |   ___________   |             | |__/-\__|____   |        #")                                
+    print("#     |  |           |  |             |  |           |  |        #")
+    print("#     |  |   0   0   |  |             |  |   0   0   |  |        #")
+    print("#     |  |     -     |  |             |  |     -     |  |        #")
+    print("#     |  |   \___/   |  |             |  |   \___/   |  |        #")
+    print("#     |  |           |  |             |  |           |  |        #")
+    print("#     |  |___|\_/|___|  |             |  |___________|  |        #")
+    print("#     |______|/ \|______|             |_______****______|        #")
+    print("# _\_______|_______|______/_      _\_______|________|______/_    #")
+    print("#  /                      \        /                       \     #")
+    print("#                                                                #")
+    print("#        Harry & Betty need your help for their wedding          #")                                                    
+    print("##################################################################")
     print()
 
 
 
-# typewriter style animation code adpted from https://www.youtube.com/watch?v=2h8e0tXHfk0
+# typewriter style animation code adpted from 
+# https://www.youtube.com/watch?v=2h8e0tXHfk0
 def print_text(text): 
     """
-    This function allows the text to be displayed letter by letter using sys import rater than a
-    whole block of text - A time delay added will apply at the end of each 
-    sentance for 1 second unless "\n" is used.
+    This function allows the text to be displayed letter by letter using sys 
+    import rather than a whole block of text - A time delay 
+    added will apply at the end of each sentance for 1 second 
+    unless "\n" is used.
     """
     for character in text:
         sys.stdout.write(character) # print each character - print it
@@ -75,7 +73,8 @@ def intro():
     while True:
         name = str(input("Please Tell me your name: \n")) 
         if name == "":
-            print("We need to check your name off the guestlist to continue ....\n")
+            print("We need to check your name off the guestlist"
+                  "to continue ....\n")
             continue
         else:
             break
@@ -86,20 +85,21 @@ def intro():
     start_game()
 
 def start_game():
-
     while True:
         response = input("Would you like to start the game? \n (yes/no): \n")
         if response.lower().strip() == 'no':
             print_text("Maybe next time. Goodbye")
             print()
             game_over()
+            play_again()
             break
         elif response.lower().strip() == 'yes':
             print()
             chapter_one()
             continue
         else:
-            print_text("Hmmmm .... I dont understand that. Please type yes or no.\n")
+            print_text("Hmmmm .... I dont understand that.\n")
+            print_text("Please type yes or no.\n")
             print()
             continue
                     
@@ -127,21 +127,24 @@ def chapter_one():
     print()
     print()
     while True:
-        response = input("Can you help Harry find some Pink flowers for the list \n"
-                            "and get back for his wedding?\n(yes/no) : \n")
+        response = input("Can you help Harry find some Pink flowers\n" 
+                         "for the list and get back for his wedding?\n"
+                         "(yes/no) : \n")
         if response.lower().strip() == 'yes':
             print()
             chapter_two()
             continue
         elif response.lower().strip() == 'no':
             print_text("Ok then, stay here, until Harry gets back.\n")
-            print_text("Betty needs your help anyway to write \n")
-            print_text("her wedding vows while Harry is off finding flowers.....\n")
+            print_text("Betty needs your help anyway to write\n")
+            print_text("her wedding vows while Harry is off\n" 
+                       "finding flowers.....\n")
             print()
             wedding_vows()
             break
         else:
-            print_text("Hmmmm .... I dont understand that. Please type yes or no.\n")
+            print_text("Hmmmm .... I dont understand that.\n")
+            print_text("Please type yes or no.\n")
             print()
             continue
 
@@ -155,8 +158,8 @@ def wedding_vows():
     noun = input("Enter a noun (A person, place or thing) : ")
     adjective = input("Enter an adjective (A word that describes a noun) : ")
     second_adjective = input("Enter another adjective : ")
-    number = input("Enter a number less than 10: ")
-    bigger_number = input("Enter a number greater than 10: ")
+    number = input("Enter a number: ")
+    bigger_number = input("Enter a bigger number: ")
     
     print()
     print_text("Nice work .... you make a good team \n")
@@ -165,12 +168,14 @@ def wedding_vows():
     print_text("Betty's wedding vows \n")
     print_text("####################\n")
     print()
-    print_text(f"I am so {emotion} to have you all here today at our {adjective} wedding.\n")
-    print_text("I promise to love you Harry, as long as we both shall live. \n")
+    print_text(f"I am so {emotion} to have you all here today ")
+    print_text(f"at our {adjective} wedding.\n")
+    print_text("I promise to love you Harry, as long as we both shall live.\n")
     print_text(f"I offer my {second_adjective} vow to be your \n")
     print_text(f"forever {noun} in sickness and in health.\n")
     print()
-    print_text(f"Ive known you for {number} years and I hope to be married to you \n")
+    print_text(f"Ive known you for {number} years \n")
+    print_text(f"and I hope to be married to you \n")
     print(f"for at least another {bigger_number} more years.\n")
     print()
     chapter_seven()
@@ -203,21 +208,23 @@ def chapter_two():
             
         elif response == '2':
             print()
-            print_text(" oh no the Farm Shop is sold out\n")
-            print_text(" Betty is not pleased\n")
-            print_text(" The Wedding is off !")
+            print_text("oh no the Farm Shop is sold out\n")
+            print_text("Betty is not pleased\n")
+            #print_text("The Wedding is off !")
             print()
-            game_over()
-            
+            game_over("The Wedding is off !\n", start_game)          
+          
         elif response == '3':
             print()
             print_text("You are a Scarecrrow !!! \n")
-            print_text("You have no phone to make the call and no money to pay for flowers.\n ")
+            print_text("You have no phone to make the call and no money \n" 
+                       "to pay for the flowers.\n")
             print()
             game_over()
             
         else:
-            print_text("Hmmmm .... I dont understand that. Please type yes or no.\n")
+            print_text("Hmmmm .... I dont understand that.\n")
+            print_text("Please type yes or no.\n")
             print()        
             
 
@@ -233,7 +240,8 @@ def chapter_three():
     print_text('I will need to find water, to keep their stalks wet.” \n')
     print()
     while True:
-        response = input("Do you think Harry needs to find water?: \n (yes/no)\n")
+        response = input("Do you think Harry needs to find water?: \n" 
+                         "(yes/no)\n")
         if response.lower().strip() == 'yes':
             print("")
             chapter_four()
@@ -241,12 +249,15 @@ def chapter_three():
         elif response.lower().strip() == 'no':        
             print_text("Harry returns with the flowers..... \n")
             print_text("but they have died without water!\n")
-            print_text("oh dear Betty is not pleased and the wedding is off.\n")
+            print_text("oh dear Betty is not pleased and the wedding\n" 
+                       "is off.\n")
             print()
             game_over()
+            play_again()
             break
         else:
-            print_text("Hmmmm .... I dont understand that. Please type yes or no.\n")
+            print_text("Hmmmm .... I dont understand that.\n")
+            print_text("Please type yes or no.\n")
             print()
             continue
 
@@ -268,7 +279,8 @@ def chapter_four():
     print_text('"Will we stop for a sleep?"\n')
     print()
     while True:
-        response = input("Do you think Harry should stop for a sleep?: \n (yes/no)\n")
+        response = input("Do you think Harry should stop for a sleep?: \n" 
+                         "(yes/no)\n")
         if response.lower().strip() == 'no':
             print("")
             chapter_five()
@@ -280,7 +292,8 @@ def chapter_four():
             game_over()
             break
         else:
-            print_text("Hmmmm .... I dont understand that. Please type yes or no.\n")
+            print_text("Hmmmm .... I dont understand that.\n")
+            print_text("Please type yes or no.\n")
             print()
             continue
 
@@ -316,7 +329,8 @@ def chapter_five():
             game_over()
             break
         else:
-            print_text("Hmmmm .... I dont understand that. Please type yes or no.\n")
+            print_text("Hmmmm .... I dont understand that.\n")
+            print_text("Please type yes or no.\n")
             print()
             continue
 
@@ -344,14 +358,18 @@ def chapter_seven():
     print_text("Wed one another the very next day\n")
     print()
     print_text("Thanks for your help,\n")
-    print_text("You helped make the best wedding ever, the best wedding yet,\n")
+    print_text("You helped make the best wedding ever, \n" 
+               "the best wedding yet,\n")
     print_text("The wedding that no one will ever forget.\n")
     print()
     happy_ending()
 
-def game_over():
+def game_over(msg, function):
     """
-    Function for when the user chooses the wrong option/ answer Prints game over and the reason why
+    Function for when the user chooses the wrong option/ 
+    answer Prints game over 
+    msg = prints the reason the game is over
+    function = start_function to restart the game
     """
     print("")
     print("##############################")
@@ -383,13 +401,16 @@ def happy_ending():
     play_again()
 
 
-def play_again():
+def play_again(function):
     """
     Function to allow the user to restart
     the game from the terminal
+    function = restart game
     """
     print("To play again click the 'Run Programme' button\n")
-    response = input("Or type 'yes': \n")
+    print("or")
+    print()
+    response = input("type 'yes': \n")
     if response.lower().strip() == "yes":
         welcome_msg()
     else:
