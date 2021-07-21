@@ -314,7 +314,7 @@ def chapter_five():
         if response.lower().strip() == 'no':
             print()
             chapter_six()
-            continue
+            
         elif response.lower().strip() == 'yes':
             print_text("So the snail and the scarecrow \n")
             print_text("Set off on their way,\n")
@@ -330,7 +330,7 @@ def chapter_five():
             print_text("Hmmmm .... I dont understand that.\n")
             print_text("Please type yes or no.\n")
             print()
-            continue
+            
 
 
 def chapter_six():
@@ -381,6 +381,10 @@ def game_over():
 
 
 def happy_ending():
+    """
+    function to display end of game message when user reaches the end of
+    the story
+    """
     print()
     print("################################")
     print("#                              #")
