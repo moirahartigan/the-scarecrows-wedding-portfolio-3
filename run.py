@@ -416,6 +416,8 @@ def play_again():
     response = input("type 'yes': \n")
     if response.lower().strip() == "yes":
         start_game()
+    elif response.lower().strip() != "yes":
+        print("I dont understand that....")
     else:
         print_text("Thanks for playing!")
 
