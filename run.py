@@ -410,7 +410,7 @@ def play_again():
     the game from the terminal
     function = restart game
     """
-    print("To play again click the 'Run Programme' button\n")
+    print("To play again click the 'Play again' button\n")
     print("or")
     response = input("type 'yes': \n")
     if response.lower().strip() == "yes":
