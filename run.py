@@ -155,12 +155,12 @@ def wedding_vows():
     instead the user helps betty write her wedding vows
     """
     print("test")
-    emotion = input("Enter an emotion : ")
-    noun = input("Enter a noun (A person, place or thing) : ")
-    adjective = input("Enter an adjective (A word that describes a noun) : ")
-    second_adjective = input("Enter another adjective : ")
-    number = input("Enter a number: ")
-    bigger_number = input("Enter a bigger number: ")
+    emotion = input("Enter an emotion : \n")
+    noun = input("Enter a noun (A person, place or thing) : \n")
+    adjective = input("Enter an adjective (A word that describes a noun) : \n")
+    second_adjective = input("Enter another adjective : \n")
+    number = input("Enter a number: \n")
+    bigger_number = input("Enter a bigger number: \n")
     
     print()
     print_text("Nice work .... you make a good team \n")
