@@ -411,7 +411,7 @@ def play_again():
     """
     print_text("To play again click the 'Play again' button\n")
     print()
-    print_text("or")
+    print_text("or\n")
     response = input("type 'yes': \n")
     if response.lower().strip() == "yes":
         start_game()
