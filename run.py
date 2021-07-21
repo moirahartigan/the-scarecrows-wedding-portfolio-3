@@ -155,8 +155,7 @@ def wedding_vows():
     user takes a different route if they choose not to help Harry find flowers
     instead the user helps betty write her wedding vows
     """
-    print("test")
-    emotion = input("Enter an emotion : \n")
+    emotion = input("Enter an emotion : \n")  
     noun = input("Enter a noun (A person, place or thing) : \n")
     adjective = input("Enter an adjective (A word that describes a noun) : \n")
     second_adjective = input("Enter another adjective : \n")
@@ -178,7 +177,7 @@ def wedding_vows():
     print()
     print_text(f"Ive known you for {number} years \n")
     print_text(f"and I hope to be married to you \n")
-    print(f"for at least another {bigger_number} more years.\n")
+    print_text(f"for at least another {bigger_number} more years.\n")
     print()
     chapter_seven()
 
@@ -359,7 +358,7 @@ def chapter_seven():
     print_text("Betty O’Barley and Harry O’Hay\n")
     print_text("Wed one another the very next day\n")
     print()
-    print_text(f"Thanks for your help {name},\n")
+    print_text("Thanks for your help,\n")
     print_text("You helped make the best wedding ever, \n" 
                "the best wedding yet,\n")
     print_text("The wedding that no one will ever forget.\n")
@@ -410,13 +409,13 @@ def play_again():
     the game from the terminal
     function = restart game
     """
-    print("To play again click the 'Play again' button\n")
-    print("or")
+    print_text("To play again click the 'Play again' button\n")
+    print_text("or")
     response = input("type 'yes': \n")
     if response.lower().strip() == "yes":
         start_game()
     else:
-        print("Thanks for playing!")
+        print_text("Thanks for playing!")
 
 
 intro()
