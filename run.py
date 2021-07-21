@@ -133,7 +133,7 @@ def chapter_one():
         if response.lower().strip() == 'yes':
             print()
             chapter_two()
-            continue
+            
         elif response.lower().strip() == 'no':
             print_text("Ok then, stay here, until Harry gets back.\n")
             print_text("Betty needs your help anyway to write\n")
