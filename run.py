@@ -144,7 +144,6 @@ def chapter_one():
             print_text("Hmmmm .... I dont understand that.\n")
             print_text("Please type yes or no.\n")
             print()
-            
 
 
 def wedding_vows():
@@ -161,7 +160,8 @@ def wedding_vows():
         if noun == "":
             print("oops you need to enter a noun to continue ....")
             continue
-        adjective = str(input("Enter an adjective (A word that describes a noun) : \n"))
+        adjective = str(input("Enter an adjective (A word that describes"
+                              "a noun) : \n"))
         if adjective == "":
             print("oops you need to enter an adjective to continue ....")
             continue
@@ -178,7 +178,8 @@ def wedding_vows():
         print()
         print_text(f"I am so {emotion} to have you all here today ")
         print_text(f"at our {adjective} wedding.\n")
-        print_text("I promise to love you Harry, as long as we both shall live.\n")
+        print_text("I promise to love you Harry, as long as we both"
+                   "shall live.\n")
         print_text(f"I offer my {second_adjective} vow to be your \n")
         print_text(f"forever {noun} in sickness and in health.\n")
         print()
@@ -324,7 +325,6 @@ def chapter_five():
         if response.lower().strip() == 'no':
             print()
             chapter_six()
-            
         elif response.lower().strip() == 'yes':
             print_text("So the snail and the scarecrow \n")
             print_text("Set off on their way,\n")
@@ -340,7 +340,6 @@ def chapter_five():
             print_text("Hmmmm .... I dont understand that.\n")
             print_text("Please type yes or no.\n")
             print()
-            
 
 
 def chapter_six():
@@ -434,5 +433,6 @@ def play_again():
         else:
             print_text("Thanks for playing!")
             break
+
 
 intro()
