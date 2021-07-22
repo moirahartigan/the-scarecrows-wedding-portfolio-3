@@ -9,13 +9,12 @@ A text based story game built with Python
 
 [View the Live Website Here](https://the-scarecrows-wedding.herokuapp.com/)
 <p align ="center"> 
-<img src="https://github.com/moirahartigan/the-scarecrows-wedding-portfolio-3/blob/main/assets/images/welcome_msg.png">
+<img src="https://github.com/moirahartigan/the-scarecrows-wedding-portfolio-3/blob/main/assets/images/the-scarecrows-wedding.png">
 </p>
 
 
 # Table of Contents
 + [Design](#design)
-  + [Goals](#goals)
 + [Features](#features)
   + [Existing Features](#existing-features)
   + [Future Features](#future-features)
@@ -35,24 +34,54 @@ A text based story game built with Python
 # Design
 This is a text-based game that the user will operate in the command line. The story is taken from the Book "The Scarecrows Wedding" by Julia Donaldson and has been adapted into a text-based story game. The aim of the game is to help Harry find flowers for his wedding by helping him make some decisions along the way. If the user decides not to help Harry they are asked to help Betty instead and the story takes a different path and the user is then asked to input some data to help Betty write her wedding vows. This game is completely written in Python.
 
-
   [Logic Flow Chart](https://github.com/moirahartigan/the-scarecrows-wedding-portfolio-3/blob/main/assets/images/flowchart%20-the-scarecrows-wedding.png)
-### Goals
-  The main goal of this project is
-### Audience
-  This game is aimed for all to play, and as its been adapted from a childrens book, it is also suitable to a younger user.
 
 # Features
 
 ## Current Features
-+ The game has a welcome graphic displayed once the game app is opened
++ The game has a welcome graphic displayed once the game app is opened which helps to identify that this is a game and also the games name "The scarecrows Wedding.
 
 <p align="center">  
- <img src=""> 
+ <img src="https://github.com/moirahartigan/the-scarecrows-wedding-portfolio-3/blob/main/assets/images/welcome_msg.png"> 
  </p>
 
+The run program button has been updated to a "play again" button to allow the user to restart the game by clicking this
 
+<p align="center">  
+ <img src="https://github.com/moirahartigan/the-scarecrows-wedding-portfolio-3/blob/main/assets/images/play-again-button.png"> 
+ </p>
+ 
+ The user have has been given the option the replay the game also from the terminal by typing "yes"
+ 
+ <p align="center">  
+ <img src="https://github.com/moirahartigan/the-scarecrows-wedding-portfolio-3/blob/main/assets/images/game-over.png"> 
+ </p>
 
+The game requests a yes/no answer for the majority of the questions however a number choice has been added to keep it interesting and the user involved. At chapter 3 the user is asked to choose an option from 1 to 3 to help Harry make his decision on what to do.
+
+<p align="center">  
+ <img src="https://github.com/moirahartigan/the-scarecrows-wedding-portfolio-3/blob/main/assets/images/number-selection.png"> 
+ </p>
+
+A second route has also been added to this story which allows the user to help Betty write her wedding vows instead. Here the user is required to input words in order to generate Bettys wedding vows. 
+
+<p align="center">  
+ <img src="https://github.com/moirahartigan/the-scarecrows-wedding-portfolio-3/blob/main/assets/images/wedding-vows.png"> 
+ </p>
+ 
+ Finally each all of the input has been validated to ensure the user inputs information where requested before the game continues
+ 
+ <p align="center">  
+ <img src="https://github.com/moirahartigan/the-scarecrows-wedding-portfolio-3/blob/main/assets/images/name-entry-validation.png"> 
+ </p>
+ 
+ <p align="center">  
+ <img src="https://github.com/moirahartigan/the-scarecrows-wedding-portfolio-3/blob/main/assets/images/yes-no-validation.png"> 
+ </p>
+ 
+ <p align="center">  
+ <img src="https://github.com/moirahartigan/the-scarecrows-wedding-portfolio-3/blob/main/assets/images/wedding-vows-input-validation.png"> 
+ </p>
 
 ## Future Features
 + I would like to add sound animation to the game to allow for sound effects to play when the user wins or looses the game and for background music during the game. 
@@ -70,12 +99,12 @@ This is a text-based game that the user will operate in the command line. The st
 * [GitHub](https://github.com/) - used to host repository.
 * [GitPod](https://gitpod.io/workspaces) - used to develop project and organise version control.
 * [GitHub Pages](https://github.com/moirahartigan/Ms1-Schools-Out-Childcare/settings/pages) - used to deploy the site.
-* [Heroku](https://www.heroku.com/home)
+* [Heroku](https://www.heroku.com/home) - App used to run the game
 ***
 ***
 # Testing
 ## Validator Testing
-At the completion or heavy editing of sections, I used the following to check my code for syntax errors:
+At the completion or heavy editing of sections, I used the following to check my code for errors:
 
 
 ### <em>PEP8 Linter</em>
@@ -87,12 +116,16 @@ At the completion or heavy editing of sections, I used the following to check my
  
  
     
-* No errors found.
+* Following corrections no errors were found.
  
 
 ## Bugs & Fixes
-* 
-
+* A number of errors were found when the code was passed through the [PEP8 validator](http://pep8online.com). The main issues were line length - where lines were over 79 characters. Other issues was the presence of white space. These errors were fixed and the code error fee on the final check.
+  * FIXED
+* A bug was found when the game was complete and the play again function had been called - the user had the option to either click the "play again" button or type yes in the terminal to restart the game, however if the user hit enter and didnt add "yes" a question would appear from an earlier part of the game. This was corrected by adding a while loop to the function and controlling the iteration with a continue and break statement. This resolved the bug.
+   * FIXED
+* Finally, the output animation for the text works perfectly in the terminal, however when pushed to the heroku app the output is not displaying the text as desired. While the text does not appear in blocks which was the case before the animation waas added, the flow and speed of the text is no the same as in the terminal.
+   * No fix found.
 ***
 ***
 # Deployment
