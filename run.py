@@ -144,7 +144,7 @@ def chapter_one():
             print_text("Hmmmm .... I dont understand that.\n")
             print_text("Please type yes or no.\n")
             print()
-            continue
+            
 
 
 def wedding_vows():
@@ -152,30 +152,40 @@ def wedding_vows():
     user takes a different route if they choose not to help Harry find flowers
     instead the user helps betty write her wedding vows
     """
-    emotion = input("Enter an emotion : \n")
-    noun = input("Enter a noun (A person, place or thing) : \n")
-    adjective = input("Enter an adjective (A word that describes a noun) : \n")
-    second_adjective = input("Enter another adjective : \n")
-    number = input("Enter a number: \n")
-    bigger_number = input("Enter a bigger number: \n")
-    print()
-    print_text("Nice work .... you make a good team \n")
-    print_text("Lets see what you came up with! \n")
-    print()
-    print_text("Betty's wedding vows \n")
-    print_text("####################\n")
-    print()
-    print_text(f"I am so {emotion} to have you all here today ")
-    print_text(f"at our {adjective} wedding.\n")
-    print_text("I promise to love you Harry, as long as we both shall live.\n")
-    print_text(f"I offer my {second_adjective} vow to be your \n")
-    print_text(f"forever {noun} in sickness and in health.\n")
-    print()
-    print_text(f"Ive known you for {number} years \n")
-    print_text("and I hope to be married to you \n")
-    print_text(f"for at least another {bigger_number} more years.\n")
-    print()
-    chapter_seven()
+    while True:
+        emotion = str(input("Enter an emotion : \n"))
+        if emotion == "":
+            print("oops you need to enter an emotion to continue ....")
+            continue
+        noun = str(input("Enter a noun (A person, place or thing) : \n"))
+        if noun == "":
+            print("oops you need to enter a noun to continue ....")
+            continue
+        adjective = str(input("Enter an adjective (A word that describes a noun) : \n"))
+        if adjective == "":
+            print("oops you need to enter an adjective to continue ....")
+            continue
+        second_adjective = str(input("Enter another adjective : \n"))
+        if second_adjective == "":
+            print("oops you need to enter an adjective to continue ....")
+            break
+        print()
+        print_text("Nice work .... you make a good team \n")
+        print_text("Lets see what you came up with! \n")
+        print()
+        print_text("Betty's wedding vows \n")
+        print_text("####################\n")
+        print()
+        print_text(f"I am so {emotion} to have you all here today ")
+        print_text(f"at our {adjective} wedding.\n")
+        print_text("I promise to love you Harry, as long as we both shall live.\n")
+        print_text(f"I offer my {second_adjective} vow to be your \n")
+        print_text(f"forever {noun} in sickness and in health.\n")
+        print()
+        print_text("I'll love you all the days of my life \n")
+        print_text("and I hope to live happily ever after.\n")
+        print()
+        chapter_seven()
 
 
 def chapter_two():
@@ -413,13 +423,16 @@ def play_again():
     print_text("To play again click the 'Play again' button\n")
     print()
     print_text("or\n")
-    response = input("type 'yes': \n")
-    if response.lower().strip() == "yes":
-        start_game()
-    elif response.lower().strip() != "yes":
-        print("I dont understand that....")
-    else:
-        print_text("Thanks for playing!")
-
+    while True:
+        response = input("type 'yes': \n")
+        if response.lower().strip() == "yes":
+            start_game()
+            continue
+        elif response.lower().strip() != "yes":
+            print("I dont understand that....")
+            continue
+        else:
+            print_text("Thanks for playing!")
+            break
 
 intro()
