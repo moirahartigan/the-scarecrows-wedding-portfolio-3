@@ -3,7 +3,8 @@
 # By Moira Hartigan
 
 # This is a story about The scarecrows wedding - You have been invited but
-# Harry and Betty need your help so the wedding can go ahead.
+# Harry and Betty need your help so the wedding can go ahead. The is an option
+# to help Harry or go a different route and help Betty with her vows.
 
 # Import time and sys to print typewriter effect.
 import sys
