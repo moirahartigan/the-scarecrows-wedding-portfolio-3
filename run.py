@@ -182,7 +182,7 @@ def wedding_vows():
         print_text("I promise to love you Harry, as long as we both "
                    "shall live.\n")
         print_text(f"I offer my {second_adjective} vow to be your \n")
-        print_text(f"forever {noun} in sickness and in health.\n")
+        print_text(f"forever {noun} wife in sickness and in health.\n")
         print()
         print_text("I'll love you all the days of my life \n")
         print_text("and I hope to live happily ever after.\n")
