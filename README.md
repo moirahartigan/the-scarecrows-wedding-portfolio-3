@@ -1,4 +1,4 @@
-# 
+
 
 
 ## Portfolio Project 3: _Python Essentials_
@@ -84,8 +84,9 @@ A second route has also been added to this story which allows the user to help B
  </p>
 
 ## Future Features
-+ I would like to add sound animation to the game to allow for sound effects to play when the user wins or looses the game and for background music during the game. 
-+ I would like to add a mute button to allow the user to control the sound effects.
++ I would like to add a choice of story so that when the player opens the app they can choose from a list of stories each with different themes.
++ I would like to add sound animation to the game to allow for sound effects to play when the user makes it to the end of the game or makes the wrong decision. 
++ I would like to make the wedding vows route longer and add some additional mad lib here to keep th
 
 ***
 ***
@@ -122,15 +123,15 @@ At the completion or heavy editing of sections, I used the following to check my
 ## Bugs & Fixes
 * A number of errors were found when the code was passed through the [PEP8 validator](http://pep8online.com). The main issues were line length - where lines were over 79 characters. Other issues was the presence of white space. These errors were fixed and the code error fee on the final check.
   * FIXED
-* A bug was found when the game was complete and the play again function had been called - the user had the option to either click the "play again" button or type yes in the terminal to restart the game, however if the user hit enter and didnt add "yes" a question would appear from an earlier part of the game. This was corrected by adding a while loop to the function and controlling the iteration with a continue and break statement. This resolved the bug.
+* A bug was found when the game was complete and the play again function had been called - the user had the option to either click the "play again" button or type yes in the terminal to restart the game, however if the user hit enter and didn't add "yes" a question would appear from an earlier part of the game. This was corrected by adding a while loop to the function and controlling the iteration with a continue and break statement. This resolved the bug.
    * FIXED
-* Finally, the output animation for the text works perfectly in the terminal, however when pushed to the heroku app the output is not displaying the text as desired. While the text does not appear in blocks which was the case before the animation waas added, the flow and speed of the text is no the same as in the terminal.
+* Finally, the output animation for the text works perfectly in the terminal, however when pushed to the heroku app the output is not displaying the text as desired. While the text does not appear in blocks which was the case before the animation was added, the flow and speed of the text is no the same as in the terminal.
    * No fix found.
 ***
 ***
 # Deployment
 ## Creating the App
-This application will be deployed via [Heroku]()
+This application will be deployed via [Heroku](https://dashboard.heroku.com/apps)
 
 * Ensure all code is correct and ready for deployment.
 * Enter the following code to import the required dependencies to the requirements.txt file:
@@ -140,7 +141,7 @@ This application will be deployed via [Heroku]()
 * Log into Heroku or sign up for a free account.
 * If signing up, you will need to wait and accept an authentication email.
 * Navigate to Dashboard.
-* Click "New" and select "create new app" from the drop-down menu. This is found in the top right cornor of the window.
+* Click "New" and select "create new app" from the drop-down menu. This is found in the top right corner of the window.
 * Provide a unique name for your application and select your region.
 * Click "Create App".
 
@@ -173,5 +174,6 @@ This site was deployed through GitHub Pages using the following steps:
 ## Acknowledgements
 * I would like to thank the Slack Community for their endless support.
 * I would like to thank Kasia Bogucka our class cohort facilitator for her constant assistance and encouragement.
+* I would like to thank my Husband for giving me the childfree time to work on this project and to my whole family for playing and testing the game.
 * Finally, I would like to thank my mentor Oluwafemi Medale for his guidence and feedback throughout this portfolio project.
  
