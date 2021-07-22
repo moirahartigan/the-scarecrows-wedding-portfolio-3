@@ -25,6 +25,7 @@ A text based story game built with Python
   + [Creating the App](#creating-the-app)
   + [Setting up the Heroku App](#setting-up-the-heroku-app)
   + [Deployment through Heroku](#deployment-through-Heroku)
+  + [How to Fork the respository](#how-to-fork-the-respository)
 + [Credits](#credits)
   + [Code](#code)
   + [Acknowledgements](#acknowledgements)
@@ -165,6 +166,12 @@ This site was deployed through GitHub Pages using the following steps:
 * Automatic Deployment: This will prompt Heroku to re-build your app each time you push your code to GitHub.
 * Manual Deployment: This will only prompt Heroku to build your app when you manually tell it to do so.
 * Ensure the correct branch is selected "master/Main", and select a deployment method. For this project I chose Automatic Deployment.
+
+## How to Fork the respository.
+* Log into GitHub.
+* In Github go to (https://github.com/moirahartigan/the-scarecrows-wedding-portfolio-3).
+* In the top right hand corner click "Fork".
+* A copy of the repository will then be added to your repositories page.
 
 ***
 ***
