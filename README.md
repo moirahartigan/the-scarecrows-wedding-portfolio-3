@@ -104,6 +104,11 @@ A second route has also been added to this story which allows the user to help B
 ***
 ***
 # Testing
+## Manual Testing
+As each function was created print statements were used to check the outcome. Once the game was complete manual texting of each path/ choice and option was carried out to ensure the game run as designed and also to ensure each response was dealt with correctly. Family members also played the game and tested its functionality. Once all bugs and issues had been resolved the game ran smoothly.
+
+The game was again manually tested through the heroku app to ensure it ran smoothly and without errors.
+
 ## Validator Testing
 At the completion or heavy editing of sections, I used the following to check my code for errors:
 
