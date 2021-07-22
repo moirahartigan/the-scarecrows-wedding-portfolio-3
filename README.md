@@ -24,7 +24,7 @@ A text based story game built with Python
 + [Deployment](#deployment)
   + [Creating the App](#creating-the-app)
   + [Setting up the Heroku App](#setting-up-the-heroku-app)
-  + [Deployment through GitHub Pages](#deployment-through-gitHub-pages)
+  + [Deployment through Heroku](#deployment-through-Heroku)
 + [Credits](#credits)
   + [Code](#code)
   + [Acknowledgements](#acknowledgements)
@@ -156,7 +156,7 @@ This application will be deployed via [Heroku](https://dashboard.heroku.com/apps
 * Take note of the order and ensure that the python buildpack is above the node.js buildpack, You can click and drag the packs to re-arrange them.
 
 This site was deployed through GitHub Pages using the following steps:
-## Deployment through GitHub Pages
+## Deployment through Heroku
 * Navigate to the "Deploy" section.
 * Scroll down to "Deployment Method" and select "GitHub".
 * Authorize the connection of Heroku to GitHub.
