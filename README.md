@@ -9,7 +9,7 @@ A text based story game built with Python
 
 [View the Live Website Here](https://the-scarecrows-wedding.herokuapp.com/)
 <p align ="center"> 
-<img src="https://github.com/moirahartigan/the-scarecrows-wedding-portfolio-3/blob/main/assets/images/the-scarecrows-wedding.png">
+<img src="https://github.com/moirahartigan/the-scarecrows-wedding-portfolio-3/blob/main/assets/images/am-i-responsive.png">
 </p>
 
 
@@ -44,7 +44,7 @@ This is a text-based game that the user will operate in the command line. The st
 + Upon launching the app a welcome graphic is displayed. This identifies the theme of the game and illustrates the game/story title "The scarecrows Wedding.
 
 <p align="center">  
- <img src="https://github.com/moirahartigan/the-scarecrows-wedding-portfolio-3/blob/main/assets/images/welcome_msg.png"> 
+ <img src="https://github.com/moirahartigan/the-scarecrows-wedding-portfolio-3/blob/main/assets/images/the-scarecrows-wedding.png"> 
  </p>
 
 The run program button has been updated to a "play again" button to allow the user to restart the game at any time by clicking this.
