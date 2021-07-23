@@ -26,6 +26,7 @@ A text based story game built with Python
   + [Setting up the Heroku App](#setting-up-the-heroku-app)
   + [Deployment through Heroku](#deployment-through-Heroku)
   + [How to Fork the respository](#how-to-fork-the-respository)
+  + [How to clone the repository](#how-to-clone-the-repository)
 + [Credits](#credits)
   + [Code](#code)
   + [Acknowledgements](#acknowledgements)
@@ -156,7 +157,7 @@ This application will be deployed via [Heroku](https://dashboard.heroku.com/apps
 ## Setting up the Heroku App 
 * Navigate to "Settings" and scroll down to "build packs".
 * Click "build packs" and then click both "python" and "node.js"(node.js is needed for the mock terminal.)
-* Take note of the order and ensure that the python buildpack is above the node.js buildpack, You can click and drag the packs to re-arrange them.
+* Take note of the order and ensure that the python build pack is above the node.js build pack, You can click and drag the packs to re-arrange them.
 
 This site was deployed through GitHub Pages using the following steps:
 ## Deployment through Heroku
@@ -169,11 +170,20 @@ This site was deployed through GitHub Pages using the following steps:
 * Manual Deployment: This will only prompt Heroku to build your app when you manually tell it to do so.
 * Ensure the correct branch is selected "master/Main", and select a deployment method. For this project I chose Automatic Deployment.
 
-## How to Fork the respository.
+## How to Fork the respository
 * Log into GitHub.
 * In Github go to (https://github.com/moirahartigan/the-scarecrows-wedding-portfolio-3).
 * In the top right hand corner click "Fork".
 * A copy of the repository will then be added to your repositories page.
+
+## How to clone the repository
+* Go to the GitHub repository.
+* Locate the Code button which is to the left of the green gitpod button and click it.
+* Select if you prefer to clone using HTTPS, SSH, or Github CLI and click the copy button to copy the URL to your clipboard.
+* Open Git Bash.
+* Change the current working directory to the one where you want the cloned directory.
+* Type git clone and paste the URL from the clipboard.
+* Press Enter to create your local clone.
 
 ***
 ***
