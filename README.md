@@ -92,8 +92,8 @@ A second route has also been added to this story and the game incorporates a mad
  </p>
 
 ## Future Features
-+ I would like to add a choice of story so that when the player opens the app they can choose from a list of stories each with different themes.
-+ I would like to add sound animation to the game to allow for sound effects to play when the user makes it to the end of the game or makes the wrong decision. 
++ I would like to add a choice of story, so that when the player opens the app, they can choose from a list of stories, each with different themes.
++ I would like to add sound animation to the game, to allow for sound effects to play, when the user makes it to the end of the game, or makes the wrong decision. 
 + I would like to add some additional options to the wedding vows path, in the form of a list within the mad lib. This would give the user a choice of words in addition to the ones they have already inputted themselves - this would generate another paragraph of vows from a dictionary.
 + I would like to refactor the yes/no question responses to reduce the code and make it cleaner.
 
@@ -115,7 +115,7 @@ A second route has also been added to this story and the game incorporates a mad
 ***
 # Testing
 ## Manual Testing
-As each function was created print statements were used to check the outcome. Once the game was complete manual texting of each path/ choice and option was carried out to ensure the game run as designed and also to ensure each response was dealt with correctly. Family members also played the game and tested its functionality. Once all bugs and issues had been resolved the game ran smoothly.
+As each function was created, print statements were used to check the outcome. Once the game was complete manual testing of each path/ choice and option was carried out to ensure the game ran as designed and also to ensure each response was dealt with correctly. Family members also played the game and tested its functionality. Once all bugs and issues had been resolved the game ran smoothly.
 
 The game was again manually tested through the heroku app to ensure it ran smoothly and without errors.
 
@@ -136,11 +136,11 @@ At the completion or heavy editing of sections, I used the following to check my
  
 
 ## Bugs & Fixes
-* A number of errors were found when the code was passed through the [PEP8 validator](http://pep8online.com). The main issues were line length - where lines were over 79 characters. Other issues was the presence of white space. These errors were fixed and the code error fee on the final check.
+* A number of errors were found when the code was passed through the [PEP8 validator](http://pep8online.com). The main issues were line length - where lines were over 79 characters. Another issue found was the presence of white space. These errors were fixed, and the code ran error fee on the final check.
   * FIXED
-* A bug was found when the game was complete and the play again function had been called - the user had the option to either click the "play again" button or type yes in the terminal to restart the game, however if the user hit enter and didn't add "yes" a question would appear from an earlier part of the game. This was corrected by adding a while loop to the function and controlling the iteration with a continue and break statement. This resolved the bug.
+* A bug was found when the game was complete and the play again function had been called - the user had the option to either click the "play again" button or type yes in the terminal to restart the game, however if the user hit enter or didn't add "yes" a question would appear, from an earlier part of the game. This was corrected by adding a while loop to the function and controlling the iteration with a continue and break statement. This resolved the bug.
    * FIXED
-* Finally, the output animation for the text works perfectly in the terminal, however when pushed to the heroku app the output is not displaying the text as desired. While the text does not appear in blocks which was the case before the animation was added, the flow and speed of the text is no the same as in the terminal.
+* Finally, the output animation for the text works perfectly in the terminal, however when pushed to the heroku app the output is not displaying the text as desired. While the text does not appear in blocks which was the case before the animation was added, the flow and speed of the text is no the same as it is in the terminal.
    * No fix found.
 ***
 ***
