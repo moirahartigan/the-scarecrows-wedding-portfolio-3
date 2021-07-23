@@ -102,6 +102,7 @@ A second route has also been added to this story which allows the user to help B
 * [GitPod](https://gitpod.io/workspaces) - used to develop project and organise version control.
 * [GitHub Pages](https://github.com/moirahartigan/Ms1-Schools-Out-Childcare/settings/pages) - used to deploy the site.
 * [Heroku](https://www.heroku.com/home) - App used to run the game
+* [Diagram Software & Flow Chart Maker](https://www.diagrams.net/) - Used to create a flowchart
 ***
 ***
 # Testing
@@ -181,6 +182,9 @@ This site was deployed through GitHub Pages using the following steps:
 * [w3schools](https://www.w3schools.com/) was used as a general source of knowledge 
 * [MND Web Docs](https://developer.mozilla.org) was used as a general source of knowledge.
 * [Stack Overflow](https://stackoverflow.com/) was used to assist during debugging.
+
+## Content
+* The story for this game has been taken and adapted from the book "The Scarecrows wedding" by Julia Donaldson
 
   
 ## Acknowledgements
