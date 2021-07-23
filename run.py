@@ -72,7 +72,7 @@ def intro():
     while True:
         name = str(input("Please Tell me your name: \n"))
         if name == "":
-            print("We need to check your name off the guestlist"
+            print("We need to check your name off the guestlist "
                   "to continue ....\n")
             continue
         else:
