@@ -73,13 +73,19 @@ A second route has also been added to this story and the game incorporates a mad
  
  Finally all of the questions has been validated to ensure the user inputs information where requested before the game continues and should any incorect data be used, the user is provided with feedback on what has gone wrong and the question is asked again.  
  
+## <em>Feedback for invalid inputs</em> 
+#### <em>Name input</em>
  <p align="center">  
  <img src="https://github.com/moirahartigan/the-scarecrows-wedding-portfolio-3/blob/main/assets/images/name-entry-validation.png"> 
  </p>
  
+ #### <em>Yes/no input</em>
+ 
  <p align="center">  
  <img src="https://github.com/moirahartigan/the-scarecrows-wedding-portfolio-3/blob/main/assets/images/yes-no-validation.png"> 
  </p>
+ 
+ #### <em>Mad lib data input</em>
  
  <p align="center">  
  <img src="https://github.com/moirahartigan/the-scarecrows-wedding-portfolio-3/blob/main/assets/images/wedding-vows-input-validation.png"> 
