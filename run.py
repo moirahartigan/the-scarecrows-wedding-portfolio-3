@@ -77,6 +77,7 @@ def intro():
             continue
         else:
             break
+    print()
     print_text(f"Welcome to Diddly Squat Farm {name}, \n")
     print_text("Thank you for joining us\n")
     print_text("for the Scarecrows Wedding.\n")
@@ -426,7 +427,7 @@ def play_again():
     while True:
         response = input("type 'yes': \n")
         if response.lower().strip() == "yes":
-            start_game()
+            intro()
             continue
         elif response.lower().strip() != "yes":
             print("I dont understand that....")
