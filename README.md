@@ -33,44 +33,44 @@ A text based story game built with Python
 ***
 ***
 # Design
-This is a text-based game that the user will operate in the command line. The story is taken from the Book "The Scarecrows Wedding" by Julia Donaldson and has been adapted into a text-based story game. The aim of the game is to help Harry find flowers for his wedding by helping him make some decisions along the way. If the user decides not to help Harry they are asked to help Betty instead and the story takes a different path and the user is then asked to input some data to help Betty write her wedding vows. This game is completely written in Python.
+This is a text-based game that the user will operate in the command line. The story is taken from the Book "The Scarecrows Wedding" by Julia Donaldson and has been adapted into a text-based story game. The aim of the game is to assist Harry in finding flowers for his wedding by helping him make some decisions along the way. If the user decides not to help Harry they are asked to help Betty instead and the story takes a different path. Here a mad lib has been incorporated and the user is asked to input some data to help Betty write her wedding vows. Once complete the vows are printed out and the story continues. This game is completely written in Python.
 
   [Logic Flow Chart](https://github.com/moirahartigan/the-scarecrows-wedding-portfolio-3/blob/main/assets/images/flowchart%20-the-scarecrows-wedding.png)
 
 # Features
 
 ## Current Features
-+ The game has a welcome graphic displayed once the game app is opened which helps to identify that this is a game and also the games name "The scarecrows Wedding.
++ Upon launching the app a welcome graphic is displayed. This identifies the theme of the game and illustrates the game/story title "The scarecrows Wedding.
 
 <p align="center">  
  <img src="https://github.com/moirahartigan/the-scarecrows-wedding-portfolio-3/blob/main/assets/images/welcome_msg.png"> 
  </p>
 
-The run program button has been updated to a "play again" button to allow the user to restart the game by clicking this
+The run program button has been updated to a "play again" button to allow the user to restart the game at any time by clicking this.
 
 <p align="center">  
  <img src="https://github.com/moirahartigan/the-scarecrows-wedding-portfolio-3/blob/main/assets/images/play-again-button.png"> 
  </p>
  
- The user have has been given the option the replay the game also from the terminal by typing "yes"
+ In addtition to this, the user has been given the option the replay the game from the terminal by typing "yes". This option appears if the user has chosen the wrong path, and the game ends or if they have completed the game and wish to play again.
  
  <p align="center">  
  <img src="https://github.com/moirahartigan/the-scarecrows-wedding-portfolio-3/blob/main/assets/images/game-over.png"> 
  </p>
 
-The game requests a yes/no answer for the majority of the questions however a number choice has been added to keep it interesting and the user involved. At chapter 3 the user is asked to choose an option from 1 to 3 to help Harry make his decision on what to do.
+The game requests a yes/no answer for the majority of the questions however a number choice has been added to keep it interesting. At chapter 3 the user is asked to choose an option from 1 to 3 to help Harry make his decision on what to do.
 
 <p align="center">  
  <img src="https://github.com/moirahartigan/the-scarecrows-wedding-portfolio-3/blob/main/assets/images/number-selection.png"> 
  </p>
 
-A second route has also been added to this story which allows the user to help Betty write her wedding vows instead. Here the user is required to input words in order to generate Bettys wedding vows. 
+A second route has also been added to this story and the game incorporates a mad lib form which allows the user to input words in order to generate Bettys wedding vows. Once the vows have been printed the story continues. 
 
 <p align="center">  
  <img src="https://github.com/moirahartigan/the-scarecrows-wedding-portfolio-3/blob/main/assets/images/wedding-vows.png"> 
  </p>
  
- Finally each all of the input has been validated to ensure the user inputs information where requested before the game continues
+ Finally all of the questions has been validated to ensure the user inputs information where requested before the game continues and should any incorect data be used, the user is provided with feedback on what has gone wrong and the question is asked again.  
  
  <p align="center">  
  <img src="https://github.com/moirahartigan/the-scarecrows-wedding-portfolio-3/blob/main/assets/images/name-entry-validation.png"> 
