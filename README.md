@@ -87,7 +87,8 @@ A second route has also been added to this story which allows the user to help B
 ## Future Features
 + I would like to add a choice of story so that when the player opens the app they can choose from a list of stories each with different themes.
 + I would like to add sound animation to the game to allow for sound effects to play when the user makes it to the end of the game or makes the wrong decision. 
-+ I would like to make the wedding vows route longer and add some additional mad lib here to keep th
++ I would like to add some additional options to the wedding vows path, in the form of a list within the mad lib. This would give the user a choice of words in addition to the ones they have already inputted themselves - this would generate another paragraph of vows from a dictionary.
++ I would like to refactor the yes/no question responses to reduce the code and make it cleaner.
 
 ***
 ***
