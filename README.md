@@ -197,6 +197,8 @@ This site was deployed through GitHub Pages using the following steps:
 ## Content
 * The story for this game has been taken and adapted from the book "The Scarecrows wedding" by Julia Donaldson
 
+## Media
+* ASCII artwork has been created by myself, Moira Hartigan.
   
 ## Acknowledgements
 * I would like to thank the Slack Community for their endless support.
